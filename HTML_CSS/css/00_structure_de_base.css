@@ -1,0 +1,18 @@
+/* Feuille De Style*/
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: purple; /* cette propriété me permet de changer la couleur du texte => violet */
+}
+h1{
+  text-align: center; /* cette propriété me permet d'aligner le titre */
+  color: blue; /* cette propriété me permet d'aligner le titre => blue */
+}
+
+/*    Les valeurs possibles pour les couleurs:
+        - notation hexdécimale : #ffffff (white)
+        - notation hexadécimale courte : #fff
+        - notation RGB (255, 255, 255) : rouge vert bleu  
+        - notation RGBa (255,255,255,0) : le dernier coresspond à l'opacité ( 0=> transparent; 1=> opaque)
+        - notation avec mots clée : green blue red purple

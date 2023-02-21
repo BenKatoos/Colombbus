@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="exo1.css">
+    <title>Exo 01</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exercices structure et terminologies</h1>
+
+        <dl>
+            <!-- dl = definition list (liste de définition) -->
+            <dt>Question 1 : La déclaration DOCTYPE est-elle obligatoire ? Où doit-elle être placée ? Quelles
+                informations contient-elle ? </dt><!-- dt = definition term (mot à définir) -->
+            <!-- la définition -->
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 1 : </span>Obligatoire/tout en haut du code/
+                    le DOCTYPE indique au navigateur comment traiter une page Web en l'occurence html
+
+                </p>
+            </dd>
+
+            <dt>Question 2 : c'est quoi un élément dans le langage <abbr>HTML</abbr> ? </dt>
+            <!-- dt = definition term (mot à définir) -->
+            <!-- L'élément ABBR pour dire qu'il y a une abbréviation -->
+
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 2 : </span> une balise, ses attribut (s'il y'en a), son contenue
+                    &lt;p&gt;blablabla&lt;/p&gt;
+
+                </p>
+            </dd>
+
+            <dt>Question 3 : c'est quoi une balise dans le langage <abbr>HTML</abbr> ? </dt>
+            <!-- dt = definition term (mot à définir) -->
+
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 3 : </span>
+                    Balises : elles sont reconnaissables car elles sont encadrées d'un cheveron ouvrant et d'un cheveron
+                    fermant. L'ouverture d'une balise détermine le début d'un élément.<br>
+                    Sa fermeture détermine sa fin. Le contenu lui est insére entre une balise ouvrante et fermante
+                    représente le contenu de cet élément. Par exemple, un lien html sera encadré d'une balise A ouvrante
+                    et fermante. Il existe aussi des balises auto-fermante(aussi dites orpholine), cesbalises
+                    correspondent à des éléments pinctuels dans une page html, pas besion de fournir une information de
+                    fin (insérer une image ou un lien par exemple). les plus courantes:<br>
+                    &lt;br/><br> &lt;img/> <br> &lt;met/> <br> &lt;input/> <br> &lt;hr/> <br> &lt;link/>
+
+                </p>
+            </dd>
+
+            <dt>Question 4 : c'est quoi un attribut dans le langage <abbr>HTML</abbr> ? </dt>
+            <!-- dt = definition term (mot à définir) -->
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 4 : </span> valeur qui configurent les éléments ou ajustent leur
+                    comportement
+                </p>
+            </dd>
+
+
+            <dt>Question 5 : Que faut-il faire pour que le code HTML soit valide ? </dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 5 : </span>
+                    <pre>
+                        <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="fr"&gt;
+                    
+                        &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                        &lt;link rel="stylesheet" href="exo1.css"&gt;
+                        &lt;titleExo 01/title&gt;
+                    
+                    
+                        &lt;/head&gt;
+                    
+                        &lt;body&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+                    => verifier via html validator
+                </p>
+            </dd>
+
+            <dt>Question 6 : À quel emplacement est defini le jeu de caractères utilisé dans le document ? </dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 6 : </span>body
+                </p>
+            </dd>
+            <dt>Question 7 : Où est déclaré le nom de l'élément racine du document ? Quel est son rôle et son nom ?</dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 7 : </span>
+                    en dessous du &lt;DOCTYPE HTML&gt; elle se nomme &lt;HTML&gt; indique que c un doc html au
+                    navigateur
+                </p>
+            </dd>
+            <dt>Question 8 : Quels sont les éléments enfants de l'élément HTML ?</dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 8 : </span>head et body
+
+                </p>
+            </dd>
+            <dt>Question 9 : À quoi sert l'élement <code>&lt;head&gt;</code> ?</dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 9 : </span> permet d'afficher du code à l'internaute
+
+                </p>
+            </dd>
+
+            <dt>Question 10 : Quel élement est obligatoire dans l'élément <code>&lt;head&gt;</code> ? À quoi sert-il ?
+            </dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 10 : </span>
+                    <code>
+                        &lt;link rel="stylesheet" href="exo1.css"&gt;
+                        &lt;title&gt;Exo 01&lt;/title&gt;
+                    
+                    </code>
+
+
+                </p>
+            </dd>
+
+            <dt>Question 11 : &Eacute;crire le code nécessaire à la liaison d'une feuille de style avec un document</dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 11 : </span>
+                    <code>&lt;link rel="stylesheet" href="exo1. &gt; <code>
+                </p>
+            </dd>
+
+            <dt>Question 12 : &Eacute;crire le code nécessaire à la liaison d'un document externe contenant des scripts
+                JavaScript avec un document</dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 12 : </span>
+                    &lt;script src="lienfichier.js"&gt;&lt;/script&gt; => dans la balise head
+                </p>
+            </dd>
+
+            <dt>Question 13 : Comment déclarer les mots-clefs associés au site ? Quelle est l'utilité de cette
+                déclaration ? &Eacute;crivez-un exemple </dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 13 : </span><code>&lt;meta name="description" content="Choaib Landoulsi Ma Neuvième Page HTML"&gt; permet un meilleur réferencement</code>
+
+                </p>
+            </dd>
+
+            <dt>Question 14 : Quel est le rôle de l'élément <code>&lt;base&gt;</code></dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 14 : </span>L'élément
+                    &lt;base&gt; définit l'URL de base à utiliser pour recomposer toutes les URL relatives contenues
+                    dans
+                    un
+                    document. Il ne peut y avoir qu'un seul élément
+                    &lt;base&gt; au sein d'un document.
+
+                </p>
+            </dd>
+
+            <dt>Question 15 : Peut-on écrire le code suivant dans la page ?
+                <code>
+                          <pre>
+                                Bienvenue dans notre site
+                                &lt;body&gt;<br>
+                                   
+                                    &lt;h1&gt;Le site du jour&lt;/h1&gt;<br>
+                                &lt;/body&gt;
+                          </pre>
+                        </code>
+            </dt>
+            <dd>
+                <p>
+                    <span class="reponse">Réponse 15 : </span> "Bienvenue sur notre site doit être inséré dans le body"
+                </p>
+            </dd>
+
+            <dt>Question 16 : Ecrivez le code CSS suivant à l'endroit adéquat et incluez un p dans la page avec une
+                classe pour ce code : <br>
+                <code>body {bacground-color:white;color:green;font-size:21px;}</code></dt>
+            <dd>
+
+
+                <p class="paragraphe">
+                    <span class="reponse">Réponse 16 : </span>
+                    body{
+                    bacground-color: white;
+                    color: green;
+                    font-size: 21px;
+                    }
+                </p>
+
+            </dd>
+        </dl>
+    </div>
+
+</body>
+
+</html>

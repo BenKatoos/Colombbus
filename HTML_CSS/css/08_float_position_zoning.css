@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6a7a78;
+    background-image: url(../image/unnamed.png);
+}
+header{
+    background-color: #6a7a78;
+}
+h1{
+    text-align: center;
+    color: #FEFCF3;
+    font-size: 40px;
+    padding: 50px 0px;
+}
+h1 span{
+    font-weight: bolder;
+    color: #579BB1;
+}
+main{
+    background-color: rgba(178, 178, 178, .30);
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+section{
+    margin: 70px;
+    padding: 10px 70px 70px;
+}
+h2{
+    color: hsl(88, 38%, 40%);
+    font-size: 30px;
+    padding: 30px;
+}
+h3{
+    font-size: 25px;
+    color: #1b365c;
+    font-style: italic;
+    padding: 15px;
+}
+.carre{
+    height: 170px;
+    width: 170px;
+    background-color: #bdb08b;
+    margin: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #579BB1;
+    border: 2px solid #6a7a78;
+    line-height: 170px;
+}
+
+.alignement{
+    float: left;
+}
+
+.superpose{
+    /* supprimer l'effet floatant*/
+    clear: both;
+}
+.boite{
+    background-image: url(../image/5c159db801f551efa2f46deb1735b10a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    border: 5px solid #ffffff ;
+    float: left;
+}
+/* un element en position absolute sort du flux et va se positionné par rapport à son dernier ancêtre positionné. si aucun parent n'est positionnée donc l'element se positione par défautl par rapport à l'élément racine de la balise html */
+
+.zone{
+    background-color: orchid;
+    height: 70px;
+}
+.zone1, .zone2, .zone3, .zone4{
+    height: 250px;
+    width: 25%;
+    float: left;
+    border: 1px solid white;  
+}
+.zone1, .zone3{
+    background-color: #bdb08b;
+}
+.zone2, .zone4{
+    background-color: #6a7a78;
+}
+.absolute{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    /*un élément de postion absolute est positionné par rapport à son parents*/
+    position: absolute;
+    left: 10%;
+    top: 24%;
+    line-height: 100px;
+    text-align: center;
+}
+.relative{
+    background-color: #2d5c7f;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+}
+.relative div{
+    background-color: orangered;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blocPhotoSf, .blocCupcake{
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.blocPhotoSf img, .blocCupcake img{
+    width: 100%;
+    
+}
+.photoSfLegende, .photoCupcake{
+    background-color: rgba(0, 0, 0, .75);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    width: 100%;
+    bottom: -90px;
+    transition: 1s;
+}
+.blocPhotoSf:hover .photoSfLegende{
+    bottom: 0px;
+}
+.blocCupcake:hover .photoCupcake{
+    bottom: 120px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+    color: blue;
+    font-size: 50px !important;
+}
+.btnRetour{
+    position: fixed;
+    bottom: 40px;
+    right: 300px;
+}
+.fa-circle-arrow-up{
+    color: rgb(236, 120, 139);
+    font-size: 30px !important;
+}
+.fa-circle-arrow-up:hover{
+    color: red;
+}
+.positionnement{
+    height: 300px;
+    
+}
+.rela{
+    position: relative;
+}
+.rouge, .vert, .bleu{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-weight:  bolder;
+    position: absolute;
+}
+.rouge{
+    background-color: red;
+    z-index: 3;
+    top: 33px;
+    left: 33px;
+    border: 1px solid white;
+}
+.vert{
+    background-color: green;
+    z-index: 2;
+    top: 66px;
+    left: 66px;
+    border: 1px solid white;
+}
+.bleu{
+    background-color: blue;
+    z-index: 1;
+    top: 99px;
+    left: 99px;
+    border: 1px solid white;
+}
+
+
+
+
+#zoning1{
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    text-align: center;
+    margin: auto;
+}
+#zoning1 header{
+    background-color: #f7f39a;
+    height: 70px;
+}
+#zoning1 aside{
+    background-color: #10828c;
+    height: 525px;
+    width: 20%;
+    color: white;
+    float: left;
+}
+#zoning1 section{
+    background-color: #388171;
+    height: 525px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#zoning2{
+    background-color: pink;
+    border: 1px solid white;
+    width: 798px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+#zoning2 header{
+    background-color: #10828c;
+    height: 80px;
+    line-height: 80px;
+}
+#zoning2 aside{
+    background-color: orangered;
+    width: 20%;
+    height: 525px;
+    line-height: 525px;
+    float: left;
+}
+#zoning2 .milieu{
+    background-color: orchid;
+    height: 525px;
+    width: 60%;
+    line-height: 525px;
+    float: left;
+}
+
+/**************************************************************************************************************/
+
+#zoning3{
+    background-color: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+}
+.haut1{
+    background-color: #203562;
+    width: 20%;
+    height: 180px;
+    float: left;
+}
+.haut2{
+    background-color: #3e588f;
+    width: 60%;
+    height: 180px;
+    float: left;
+}
+#zoning3 nav{
+    background-color: #085269;
+    height: 100px;
+    margin: 0;
+}
+#zoning3 aside{
+    background-color: #446878;
+    width: 26%;
+    height: 700px;
+    margin: 0;
+    float: left;
+}
+.zoningA, .zoningB{
+    height: 250px;
+    width: 37%;
+    float: left;
+}
+.zoningA{
+    background-color: #c0c5cd;
+}
+.zoningB{
+    background-color: #203562;
+}
+.slide{
+    background-color: #314a52;
+    height: 500px;
+    margin: 0;
+}
+.zoning1C, .zoning1D, .zoning1E{
+    height: 200px;
+    width: 18%;
+}
+
+.zoning1C, .zoning1E{
+    background-color: #c0c5cd;
+    float: left;
+}
+.zoning1D, .zoning1F{
+    background-color: #203562;
+    float: left;
+}
+.zoning1F{
+    height: 200px;
+    width: 20%;
+}
+
+/**************************************************************************************************************/
+
+
+#zoning4{
+    background-color: pink;
+    text-align: center;
+    margin: auto;
+}
+#zoning4 header{
+    background-color: gold;
+    width: 100%;
+    height: 60px;
+}
+#zoning4 nav{
+    background-color: #579BB1;
+    width: 100%;
+    height: 60px;
+    
+}
+#zoning4 div{
+    width: 50%;
+    height: 300px;
+}
+#zoning4 footer{
+    background-color: #579BB1;
+    padding: 60px;
+}
+

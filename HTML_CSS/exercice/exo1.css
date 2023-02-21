@@ -1,0 +1,37 @@
+.container {
+    width: 80%;
+    margin: auto;
+    border: #b21f66 1px solid;
+    padding: 1rem;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+p {
+    line-height:2rem ;
+    font-size: 1.2rem;
+}
+dt {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #b21f66;
+}
+abbr{ 
+   color: green;
+    /* font-weight : épaisseur à caractére */
+    font-weight: bolder;
+}
+code{ 
+    /* background-color:#b21f66; */
+    font-weight: bolder;
+    color:cornflowerblue
+}
+body {
+    background-color: black;
+    color:green;
+    font-size:21px;
+}
+.paragraphe {
+    color: orangered;
+}

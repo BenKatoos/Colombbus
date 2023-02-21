@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi Ma Sixième Page HTML">
+    <meta name="author" content="Choaib Landoulsi">
+    <link rel="stylesheet" type="text/css" href="css/05_les_formulaires.css">
+    <title>Ma Sixième Page HTML</title>
+</head>
+
+<body>
+    <h1>Mon Premier Formulaire HTML</h1>
+    <!--
+        Le formulaire sert à récuperer des données que l'utilisateurs va entrer et les envoyer au serveur pour traitement (en php par exemple) : login, formulaire de contact et même le chat de facebook
+    -->
+    <!--
+        Je déclare le formulaire avec la balise form form est une balise essentiels elle permet d'indiquer le début d'un formulaire dont on s'en servira énormement en développent (inscription sire, newsletter, ajout d'un produit)
+        Cette balise fonctione avec deux attributs essentiels! :
+            - l'attribut action permet d'indiquer où l'on récupère les données envoyées par l'utilisateur => indique l'adresse de la page ou du fichier qui vas traiter les informations envoyés par le formulaire.
+            - l'attribut methode permet d'indiquer si on récupère les données ou si on les envoie
+            exemple : lorsqu'on s'inscrit sur un site on envoie nos données vers une base de données,
+                      lorsqu'on se connecte on récupère et verifie des données dans la base de données
+        2 méthodes 
+            -> method="get" : informations passées dans la barre d'adresse
+            -> method="post" : envoie les données dans le corps de la requête sans passer par la barre d'adresses => methode la plus utilisé
+            -> enctype="multipart/form-data" on lutilise quand on as un champs d'envoir de ficher dans le formulaire
+    -->
+    <form action="#" method="post">
+        <fieldset>
+            <!--
+                Fielset permet d'assemblerdes éléments de notre formulaire lorsqu'ils sont en liens 
+            -->
+            <legend>
+                Nom et prénom
+            </legend>
+
+            <label for="nom">
+                Nom
+            </label>
+            <!--
+                Label designe l'étiquette du champs, elle permet de définir et d'informer sur l'infos attendu
+            -->
+            <input type="text" id="nom" name="nom" placeholder="Votre Nom De Famille" required>
+            <!--
+                input : element de saisie de formulaire : son apparence repose grandement sur la valeur de l'attribut type qui l'accompagne. Bien penser à ajouter les attribut id et name  qui auront la même valeur que l'attribut for du label
+            -->
+            <!--
+                input avec type="texte" => zone de texte monoligne
+                name -> pour récuperer la valeur en php (pas d'espace ni accents ni caractères spéciaux)
+                required indique que le champs doit être renseigné obligatoirement c'est un attribut particulié il n'a pas de valeur
+            -->
+            <!--
+                placeholder => "garder la place" exemple de contenue valable, informations à l'utilisateur de ce qui est attendu
+            -->
+            <label for="prenom">
+                Prénom
+            </label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre Prénom" maxlenght="20" required>
+            <!-- Nombre de caractères maximum -->
+        </fieldset>
+        <div>
+            <label for="dateDeNaissance">Votre date de naissance</label>
+            <input type="date" id="dateDeNaissance" name="dateDeNaissance">
+            <!-- type date =>permet d'afficher un calendrier -->
+        </div>
+        <div>
+            <label for="age">Votre âge</label>
+            <input type="number" id="age" name="age">
+            <!-- type number permet d'entrer seulement des nombres -->
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="moins15" value="moins15" name="age">
+            <label for="moins15">Moins de 15 ans</label>
+        </div>
+        <div>
+            <input type="radio" id="medium15-25" value="medium15-25" name="age" checked>
+            <label for="medium15-25">15 - 25ans</label>
+        </div>
+        <div>
+            <input type="radio" id="medium25-40" value="medium25-40" name="age">
+            <label for="medium25-40">25 - 40ans</label>
+        </div>
+        <div>
+            <input type="radio" id="plus40" value="plus40" name="age">
+            <label for="plus40">Encore Plus Vieux Que Cela</label>
+        </div>
+        <br>
+        <!--
+            Le champs : zone d'option/ bouton radio
+            Lorsqu'on fais des boutons de type radio cela signifie qu'un seul peut être coché, naturelement celui qui à l'attribut checked sera coché d'office.
+        -->
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Créez votre pseudo" required>
+        </div>
+        <div>
+            <label for="mdp">Mots De Passe</label>
+            <input type="password" id="mdp" placeholder="Mots de passe" required>
+            <!-- Type password permet de masqué le mots de passe-->
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Adressez votre mail" required>
+            <!-- Type email permet de saisir un email, la valeur va être automatiquement validé et vérifier -->
+        </div>
+        <div>
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Saisissez votre numéro" pattern="^[0-9]{10}$"
+                required>
+            <!-- type tel permet d'afficher le clavier chiffré pour les smarthphones -->
+            <!-- pattern permet d'imposer un intervalle de chiffre avec un certain nombre de numero requis -->
+        </div>
+        <div>
+            <label for="photo">Photographie</label>
+            <input type="file" id="photo" name="photo">
+            <!-- type file : permet d'uploder des fichier ou un fichier -->
+        </div>
+        <div>
+            <label for="pays">Vous résidez en </label>
+            <select name="pays" id="pays">
+                <!-- indique le debut et la fin de la liste déroulante-->
+                <optgroup label="Europe">
+                    <!--grouper les options : sépare les payes en fonction de leur continent-->
+                    <option value="allemagne">Allemagne</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="france">France</option>
+                    <option value="suisse">Suisse</option>
+                </optgroup>
+                <optgroup label="Amérique du nord">
+                    <option value="canada">Canada</option>
+                    <option value="etas-unis">USA</option>
+                </optgroup>
+                <optgroup label="Amérique Du Sud">
+                    <option value="bresil">Brésil</option>
+                    <option value="mexique">Mexique</option>
+                    <option value="colombie">Colombie</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="tunisie">Tunisie</option>
+                    <option value="algerie">Algérie</option>
+                    <option value="maroc">Maroc</option>
+                    <option value="egypte">Egypte</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="japon">Japon</option>
+                    <option value="thailande">Thailande</option>
+                    <option value="bengladesh">Bengladesh</option>
+                    <option value="indonésie">Indonésie</option>
+                </optgroup>
+            </select>
+            <!--
+                La balise select viens toujours avec des options : elle permet de créer un menu déroulant
+            -->
+        </div>
+        <br>
+        <div>
+            <label for="question">Choississez votre déstination</label>
+            <div>
+                <input type="checkbox" name="question" value="chine"> En Chine?
+                <input type="checkbox" name="question" value="autriche"> En Autriche
+                <input type="checkbox" name="question" value="mars" checked> ou sur Mars !? (retour non garanti)
+            </div>
+            <!--
+                checkbox -> case à cocher
+                toutes peuvent être cocher
+                attribut checked pour avoire une case cochée par défaut
+            -->
+        </div>
+        <div>
+            <label for="commentaire">Avez-vous une précision à apporter</label>
+            <br>
+            <textarea name="commentaire" id="commentaire" cols="60" rows="6"></textarea>
+            <!--
+                Textarea -> zone de texte multiligne
+                rows -> nombre de ligne
+                cols -> nombre de colonne
+            -->
+        </div>
+        <!-- Pour envoyer le formulaire -->
+        <input type="submit" name="inscription" value="Envoyer">
+        <!-- Pour vider le formulaire / remis à zéro -->
+        <input type="reset" name="annuler" value="Effacer">
+        <!-- attribut disabled pour désactivez un élément -->
+        <input type="button" value="bouton inactif" disabled>
+        <!--
+            Il existe d'autre type d'input : 
+            - type="url" => pour saisir une adresse absolue
+            - type="color" => pour saisir une couleur
+            - type="search" => pour créer un champs de recherche
+            - Différents types de champs de séléction de dates existent :
+                    date : pour la date
+                    time : pour l'heure
+                    week : pour la semaine
+                    month : pour le mois
+                    datetime : pour la date et l'heure (avec gestion du décalage horaire 
+                    datetime-local : pour la date et l'heure local (sans gestion du décalage horaire)
+        -->
+    </form>
+</body>
+
+</html>

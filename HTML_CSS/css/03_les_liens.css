@@ -1,0 +1,20 @@
+body{
+    background-repeat: repeat;  
+    color: blue;
+    font-size: 2em;
+}
+a{
+    text-decoration: none; /*text decoration => on peut souligner ou bien surligner,barrer,etc*/
+    color:purple;
+}
+/*Pseudo classes sur les liens: une pseudo classes est un mot clé prefixé par deux points et qui s'ajoute au sélécteur pour appliquer un style à un élément dans un cas particulier*/
+a:hover{
+    text-decoration: underline;
+    color: crimson;
+    background-color: black;
+}
+/*Au survole: la pseudo classe :hover désigne un objet survolé par le curseur de la souris ça peut être un lien ou n'importe quel élément html*/
+a:visited{
+        color: aqua;
+
+}

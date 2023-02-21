@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi Ma Neuvième Page HTML">
+    <meta name="author" content="Choaib Landoulsi">
+    <link rel="stylesheet" type="text/css" href="css/08_float_position_zoning.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Ma Neuvième Page HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1> Float <span>|</span> Position <span>|</span> Zoning</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1 | Float</h2>
+            <div>
+                <h3>Float1</h3>
+                <div class="carre alignement ">1</div>
+                <div class="carre alignement">2</div>
+                <div class="carre alignement">3</div>
+                <div class="carre alignement">4</div>
+                <div class="carre alignement superpose">5</div>
+                <div class="carre alignement">6</div>
+                <div class="carre alignement ">7</div>
+                <div class="carre alignement superpose">8</div>
+                <div class="carre alignement">9</div>
+                <div class="carre superpose">10</div>
+            </div>
+            <div>
+                <h3>Exercice Float</h3>
+                <div class="boite">1</div>
+                <div class="boite">2</div>
+                <div class="boite">3</div>
+                <div class="boite">4</div>
+                <div class="superpose"></div>
+                <div class="boite">5</div>
+                <div class="boite">6</div>
+                <div class="boite">7</div>
+                <div class="boite">8</div>
+
+                <div class="superpose"></div>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, dignissimos quaerat sunt explicabo
+                    officia dolore alias aspernatur praesentium, optio impedit deleniti? Quisquam at, placeat aliquam
+                    vitae laboriosam suscipit ullam saepe!</p>
+            </div>
+            <div>
+                <h3>Exercice sur les float</h3>
+                <div>
+                    <div class="zone"></div>
+                    <div class="zone1"></div>
+                    <div class="zone2"></div>
+                    <div class="zone3"></div>
+                    <div class="zone4"></div>
+                    <div class="zone superpose"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>2 | Position</h2>
+            <div>
+                <h3>Position Absolute</h3>
+                <div class="absolute">
+                    <p>Carré Jaune</p>
+                </div>
+            </div>
+            <div>
+                <h3>Position Relative</h3>
+                <div class="relative">
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <h3>Image avec une animation</h3>
+                <figure class="blocPhotoSf">
+                    <img src="image/unnamed.jpg" alt="pont">
+                    <figcaption class="photoSfLegende">
+                        <h4>Ma légende</h4>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <h3>Image avec une animation</h3>
+                <figure class="blocCupcake">
+                    <img src="image/unnamed (1).jpg" alt="pont">
+                    <figcaption class="photoCupcake">
+                        <h4>Ma légende</h4>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <h3>Position Fixed</h3>
+                <p>Bouton Retour Vers Le Haut De La Page</p>
+                <div>
+                    <a href="#" class="btnRetour">
+                        <!-- <span class="material-symbols-outlined">arrow_circle_up</span> -->
+                        <i class="fa-solid fa-circle-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="positionnement">
+                <h3>Position avec z-index</h3>
+                <div class="rela">
+                    <div class="rouge">Rouge</div>
+                    <div class="vert">Vert</div>
+                    <div class="bleu">Bleu</div>
+                </div>
+            </div>
+        </section>
+        <section class="zoning">
+            <h2>3 | Zoning</h2>
+            <div id="zoning1">
+                <h3>Zoning n°1</h3>
+                <header>
+                    <p>Ici le zoning</p>
+                </header>
+                <aside>
+                    <p>Zone de gauche</p>
+                </aside>
+                <section>
+                    <p>Zone de droite</p>
+                </section>
+                <div class="superpose"></div>
+            </div>
+            <br>
+
+            <div id="zoning2">
+                <h3>Zoning n°2</h3>
+                <header>
+                    <p>Zone de Header</p>
+                </header>
+                <aside>
+                    <p>Zone de Gauche</p>
+                </aside>
+                <div class="milieu">
+                    <p>Zone du Milieu</p>
+                </div>
+                <aside>
+                    <p>Zone de Droite</p>
+                </aside>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div id="zoning3">
+                <h3>Zoning n°3</h3>
+                <div class="haut1">Haut 1<br>DIV</div>
+                <div class="haut2">Haut 2<br>DIV</div>
+                <div class="haut1">Haut 3<br>DIV</div>
+                <div class="superpose"></div>
+                <nav>
+                    <p>Menu<br>NAV</p>
+                </nav>
+                <aside>
+                    <p>Zone de Gauche<br>ASIDE</p>
+                </aside>
+                <div class="zoningA">
+                    <p>A<br>DIV</p>
+                </div>
+                <div class="zoningB">
+                    <p>B<br>DIV</p>
+                </div>
+                <section class="slide">
+                    <h2>slideshow, diaporama<br>SECTION</h2>
+                </section>
+                <div class="zoning1C">C<br>DIV</div>
+                <div class="zoning1D">D<br>DIV</div>
+                <div class="zoning1E">E<br>DIV</div>
+                <div class="zoning1F">F<br>DIV</div>
+                <div class="superpose"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="zoning4">
+                <h3>Zoning n°4</h3>
+                <header>
+                    <p>Header</p>
+                </header>
+                <nav>
+                    <p>nav</p>
+                </nav>
+                <div class="zone1">Zone 1</div>
+                <div class="zone2">Zone 2</div>
+                <div class="zone2">Zone 3</div>
+                <div class="zone1">Zone 4</div>
+                <footer>
+                    <p>Footer</p>
+                </footer>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/090cf84778.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

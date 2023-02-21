@@ -1,0 +1,90 @@
+/*Feuille de style pour ma page d'accueil*/
+
+/* :root{
+    La pseudo-classe CSS :root permet de cibler la racine du document, soit la balise HTML
+    quand je met la valeur en absolu en px et si j'utilise la fonctionnalité de settings chrome pour augmenter et déminuer l'ecriture ça ne fonctionnera pas parceque j'iterdit l'héritage et je  lui dit je veux tout le temps que ça soit 10px  
+    font-size: 10px; 
+    Quand je met la valeur en pourcentage la taille de police indiquer sur le navigateur s'adaptera avec le paramétrage 
+    font-size: 100%; 
+
+} */
+/*  Font-size -> taille de police 
+    px -> pixel -> valeur fixe
+    em -> valeur relative au parent : proportieonelle et permet aussi de gérer le responsive
+    rem -> valeur relative à la racine du document : recommandée
+/* l'idéale c'est d'utiliser l'unité rem pour les font size, les margin et padding parceque ça permet de faciliter l'accéssibilité   */
+/* L’unité rem signifie root element et dépend de la font-size fixée dans la balise <html>, qui sert de point de référence.
+C’est pour l’utilisateur que le rem trouve son intérêt : depuis les paramètres de son navigateur, l’utilisateur contrôle la taille du texte. En modifiant la taille de police dans Chrome, par exemple, l’utilisateur s’attend à un confort de lecture qui lui convient. Faisons le test avec deux textes : l’un fixé en pixels, l’autre en rem.
+/* Modifions la taille de police dans le navigateur pour Très grande. Seul le texte dont la taille est fixée en rem s’adapte. */
+/* Donc 16px équivalent à 1rem : 1rem = 16px
+=> si on veut exprimer une taille équivalente à 10px il faut appliquer la régle de trois (voir photo px-rem1 dans dossier img ) 
+=> 10px équivalent à 0.625rem
+*/
+
+/* 
+Il existe une façon plus intuitive d’écrire en rem pour que la conversion ne demande pas systématiquement un calcul. Il s’agit de modifier volontairement la taille de référence du navigateur, disponible dans l’élément racine <html> 
+Par défaut, cette valeur est à 100%. Le constat est le suivant : si font-size vaut 100%, alors 1rem vaut 16px.
+*/
+/* On l’a vu plus haut, cela n’est pas pratique pour trouver des équivalences facilement.
+La solution que vous verrez très souvent consiste à modifier la valeur de référence pour qu’elle corresponde à 10px. (voir photo px-rem2 dans dossier img ) */
+/* En modifiant la valeur de référence de l’élément racine <html> à 62.5%,
+=> 1rem vaudra 10px. 
+*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/fond.png); /* insertion image de fond */
+    font-family: Arial, Helvetica, sans-serif; /* font save web*/
+}
+
+#container{
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    border: 1px solid grey;
+    box-shadow: 0 1px 0 rgba(126,122,122, .4);
+}
+header{
+    display: flex;
+    justify-content: space-between; /* permet d'espacer les div dans le header */
+    width: 100%;
+
+}
+
+/*Première Header Div début*/
+header :first-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+img[src="assets/img/logo1.png"]{
+    margin: 0 2rem 2rem 1rem;
+}
+h1{
+    font-size: 4.2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+header :first-child h3{
+    margin: 1rem 0 0 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: #f583e3;
+}
+header :first-child h3:hover{
+    color: purple;
+}
+/*Première  Header Div fin*/ 
+/*Deuxième Header Div  début*/
+header :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+/*Deuxième Header DIV fin */

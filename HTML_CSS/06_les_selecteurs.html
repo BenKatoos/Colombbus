@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi Ma Septième Page HTML">
+    <meta name="author" content="Choaib Landoulsi">
+    <link rel="stylesheet" type="text/css" href="css/06_les_selecteurs.css">
+    <title>Ma Septième Page HTML</title>
+</head>
+
+<body>
+    <h1>Les Sélecteurs CSS</h1>
+    <p>
+        Un sélecteur est un moyen de séléctionner un élément CSS. On connait déja les balises, les identifiants et les
+        classes. Il existe d'autre comme les pseudos classe mais aussi la séléction grâce aux enfants
+    </p>
+    <section>
+        <div>
+            <p>paragraphe 1</p>
+            <p>paragraphe 2</p>
+            <p>paragraphe 3</p>
+            <p>paragraphe 4</p>
+            <p>paragraphe 5</p>
+            <p>paragraphe 6</p>
+            <p>paragraphe 7</p>
+            <p>paragraphe 8</p>
+            <p>paragraphe 9</p>
+            <p>paragraphe 10</p>
+        </div>
+        <div>
+            <p>paragraphe 1</p>
+            <p>paragraphe 2</p>
+            <p>paragraphe 3</p>
+        </div>
+    </section>
+    <section class="select">
+        <!--
+            - class="" -> est un attriut qui peut se mettre sur n'importe quelle balise (ouvrante)
+            - il permet de cibler de manière spécifique certains éléments
+            - une même class peut etre utilisé sur plusieurs balise dans le meme document
+            - une selection de class commence toujours par un point
+        -->
+        <h3>Titre De La Section</h3>
+        <p>texte n° 1</p>
+        <p>texte n° 2</p>
+        <p>texte n° 3</p>
+        <p>texte n° 4</p>
+        <p>texte n° 5</p>
+        <p>texte n° 6</p>
+        <p>texte n° 7</p>
+        <p>texte n° 8</p>
+        <p>texte n° 9</p>
+        <p>texte n° 10</p>
+        <div class="zoneA">zone A</div>
+        <div class="zoneB">zone B</div>
+        <div id="zoneC">zone C</div>
+        <!--
+            - id="" -> est un attribut qui a le meme role qu'une classe mais il est à usage unique sur la page
+            - un seul attribut id est possible par balise
+            - on le cilbe en CSS avec #
+        -->
+        <div id="zoneD">zone <span>D</span>
+        </div>
+    </section>
+    <section>
+        <div id="zone1">
+            <h3>Titre De La Zone 1</h3>
+            <p>Zone1, j'ai un identifiant zone 1</p>
+        </div>
+        <div>
+            <p class="psde">Sa majesté l'altesse royale <span>Elisabeth II</span></p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h4>Titre De Niveau 4</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat dolorem impedit expedita fugit
+                inventore veniam libero exercitationem, deserunt omnis temporibus corporis dolores ullam suscipit
+                reiciendis! Molestias aliquid cumque fugit.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat dolorem impedit expedita fugit
+                inventore veniam libero exercitationem, deserunt omnis temporibus corporis dolores ullam suscipit
+                reiciendis! Molestias aliquid cumque fugit.
+            </p>
+            <a href="#" title="mon premier lien">Lien 1</a>
+            <a href="#">Lien 2</a>
+            <a href="#" title="Cliquez ici">Lien 3</a>
+            <a href="#">Lien 4</a>
+
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

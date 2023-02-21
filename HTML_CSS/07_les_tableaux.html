@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi Ma Huitième Page HTML">
+    <meta name="author" content="Choaib Landoulsi">
+    <link rel="stylesheet" type="text/css" href="css/07_les_tableaux.css">
+    <title>Ma Huitième Page HTML</title>
+</head>
+
+<body>
+    <h1>Un Tableau Pour Les Données Tabulaires</h1>
+    <!-- Ouverture du tableau -->
+    <table>
+        <!-- Titre du tableau -->
+        <caption>Vente de la semaine</caption>
+        <!-- En-tête du tableau -->
+        <thead>
+            <!-- tr -> table row ->rangée du tableau -->
+            <tr>
+                <!-- cellule d'en-tête -->
+                <th>Jour</th> <!-- th->table head : les en-têtes des colonnes -->
+                <th>Smarthphones</th>
+                <th>Tablettes</th>
+                <th>Ordinateurs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Le corps du tableau -->
+            <tr>
+                <!-- td -> table data -> cellules du tableau -->
+                <td>Lundi</td>
+                <td>10</td>
+                <td>5</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>7</td>
+                <td>2001</td>
+                <td>86</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>789</td>
+                <td>654</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>741</td>
+                <td>852</td>
+                <td>963</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>753</td>
+                <td>951</td>
+                <td>248</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- tfoot-> table foot : le pied ud tableau -->
+            <tr>
+                <td>Total</td>
+                <td>2300</td>
+                <td>4463</td>
+                <td>1468</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- Fermeture du tableau -->
+
+    <h2>Rowspan / Colspan</h2>
+    <table>
+        <caption>Exemple de tableau avec<em>rowspan</em>
+        </caption>
+        <!-- rowspan est un attribut qui permet de déclarer qu'une cellule de tableau va faire la taille du nombre précisé entre guillemet -> verticalement
+        -->
+        <tr>
+            <td>Nom</td>
+            <td>Mozart</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Email</td>
+            <td>mozart@gmail.com</td>
+        </tr>
+        <tr>
+            <!-- <td>Email</td> -->
+            <td>bestcomposer@free.fr</td>
+        </tr>
+    </table>
+    <table class="demoColspan">
+        <caption></caption>
+        <!-- colspan est un attribut qui permet de déclarer qu'une cellule de tableau va faire la taille du nombre précisé entre guillemet 
+        -> horizontalement
+        -->
+        <tr>
+            <td class="purple"></td>
+            <td></td>
+            <td class="purple"></td>
+            <td></td>
+            <td class="purple"></td>
+            <td></td>
+            <td class="purple"></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="purple"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="purple"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="purple"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="purple"></td>
+            <td colspan="2"></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="purple"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="purple"></td>
+            <td></td>
+            <td class="purple"></td>
+            <td></td>
+            <td class="purple"></td>
+            <td></td>
+            <td class="purple"></td>
+        </tr>
+    </table>
+    <table class="demoColspan">
+        <caption></caption>
+        <tr>
+            <td></td>
+            <td colspan="2" class="purple"></td>
+            <td></td>
+            <td colspan="2" class="purple"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="purple"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="7" class="purple"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="purple"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="purple"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="purple"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

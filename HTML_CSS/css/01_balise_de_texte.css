@@ -1,0 +1,32 @@
+body{
+    background-image: url(image/dessinplage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    color: white;
+}
+section{
+    font-style: italic;
+}
+p span{
+    font-size: 15px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+h3{
+    color: red;
+    text-align: center; /*centrage du texte*/
+    font-style: italic; /* style de police */
+    font-weight: bold;  /*l'épaisseur de la police et 100 => très fin 900=> très épais */
+}
+h4 span {
+    color: red;
+    font-family: 'Dhurjati', sans-serif;
+}
+
+ul li {
+    list-style-type: square;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi Ma Cinquième Page HTML">
+    <meta name="author" content="Choaib Landoulsi">
+    <link rel="stylesheet" type="text/css" href="css/04_les_images.css">
+    <title>Ma Cinquième page HTML</title>
+</head>
+
+<body>
+    <h1>Les Images</h1>
+    <!--
+        La balise qui va nous permettre d"insérer une image c'est la balise img
+        C'est une balise orpheline
+        Elle est toujours accompagné d'un attribut src il permet d'indiquer où se trouve l'image que l'on eut insérer
+        aussi elle est accompagné de l'attribut alt pour texte alternatif on doit toujours indiquer un texte alternatif à l'image c'est une description de l'image. Ce texte sera affiché à la place de l'image si celle ci ne peut être télécharger sur la page ou dans les navigateurs de personnes handicapé (non-voyants)
+    -->
+    <section>
+        <h2>1|Images Insérée En Html</h2>
+        <img src="image/dessinplage.png" alt="dessin plage"><br>
+        <img src="https://cdn.futura-sciences.com/cdn-cgi/image/width=1520,quality=50,format=auto/sources/images/qr/chat-signes-depression.jpeg"
+            alt="un chaton tout mignion" width="500px"><br>
+        <!--
+            Ici dans src j'ai mis un chemin absolu de l'image
+        -->
+        <img src="image/bateau.png" alt="bateau" title="bateau"><br>
+
+    </section>
+    <section>
+        <h2>2|Les Figures</h2>
+        <figure>
+            <img src="image/espace.png" alt="espace">
+            <figcaption>
+                Dessin sur notre système solaire
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="imageFond">
+        <h2>3|Les Images De Fonds Insérée En Css</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, mollitia fuga repellat quis veritatis eos
+            veniam, amet doloribus, neque ullam aut cumque quod enim minus illo recusandae earum magnam sequi.
+            Consequuntur aperiam, veniam corrupti debitis molestiae doloribus explicabo repudiandae natus temporibus
+            cum, molestias porro excepturi nostrum, pariatur minus ea exercitationem tenetur mollitia error numquam illo
+            repellat! Cumque sunt molestiae architecto.
+            Provident, animi. Eius, nesciunt incidunt. Itaque sed in autem, iusto soluta enim quidem eos facilis totam
+            quam voluptatem, ipsam nam expedita aliquam, asperiores minima maxime molestiae vero cupiditate. Iusto,
+            suscipit.</p>
+    </section>
+
+
+
+    <section>
+        <h2>4|Image avec animation en css</h2>
+        <img src="image/systemesolaire.png" alt="système solaire" class="image"><br>
+        <img src="image/montagne.png" alt="montagne" class="image rotation360">
+    </section>
+    <section>
+        <h2>5|Image De Type Block</h2>
+        <img src="image/montagne.png" alt="montagne" class="montagne">
+        <img src="image/montagne.png" alt="montagne" class="montagne">
+        <img src="image/montagne.png" alt="montagne" class="montagne">
+
+    </section>
+
+</body>
+
+</html>

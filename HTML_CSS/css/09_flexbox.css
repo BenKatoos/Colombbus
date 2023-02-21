@@ -1,0 +1,452 @@
+@font-face{
+    font-family: "Sketsa";
+    src: url(../font/Sketsa\ Ramadhan\ Alternates.ttf);
+
+    font-family: "American";
+    src: url(../font/American\ Captain.ttf);
+
+    font-family: "StarWarsCorps";
+    src: url(../font/Starjedi.ttf);
+}
+@font-face{
+    font-family: "Space";
+    src: url(../font/Starjhol.ttf);
+}
+@font-face{
+    font-family: "Starjout";
+    src: url(../font/Starjout.ttf);
+}
+
+
+
+/* 
+Principe du FlexBox : permet de passer d'un contexte block à un contexte flex. Pour le faire il faut appliquer un model de boite flexible sur le conteneur de mes éléments. Le conteneur est l'élément parent.
+Dans le contexte flex on va avoir un axe principale (main axis), il est par défaut horizontale et commence à gauche.
+Les élément qui sont à l'interieur du parents (avec un contexte flex) vont être distribuée en fonction de cet axe principale.
+La terminologie : - le parent avec du flex -> container
+                  - les éléments à l'intérieur du container -> items (item au singuliée)
+*/
+
+
+body{
+    background-image: url(../image/space.jpg);
+    
+    font-family: "StarWarsCorps";
+    color: white;
+}
+
+h1{
+    font-family: "Space";
+}
+span{
+    color: indigo;
+}
+
+#containerA{
+    border: 1px solid white;
+}
+
+#containerA div{
+    margin: 20px 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#containerA div:nth-child(1){
+    background-color: blue;
+    text-align: center;
+    line-height: 150px;
+}
+#containerA div:nth-child(2){
+    background-color: purple;
+    text-align: center;
+    line-height: 150px;
+}
+#containerA div:nth-child(3){
+    background-color: rgb(77, 19, 77);
+    text-align: center;
+    line-height: 150px;
+}
+
+
+#containerB{
+    border: 1px solid white;
+    display: flex;
+}
+
+/*
+Instructions à donner au parent suite à cette application les éléments dans le conteneurb à totalement changé : les div s'affichent côte à côte 
+*/
+
+#containerC{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+}
+
+#containerCa{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#containerCb{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#containerCc{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.styleV2{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.style :nth-child(1){
+    background-color: blue;
+    text-align: center;
+    line-height: 150px;
+}
+.style :nth-child(2){
+    background-color: purple;
+    text-align: center;
+    line-height: 150px;
+}
+.style :nth-child(3){
+    background-color: rgb(77, 19, 77);
+    text-align: center;
+    line-height: 150px;
+}
+.style div {
+    margin: 20px 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#containerD{
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+#containerD-r{
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+#containerFlexStart{
+    border: 1px solid white;
+    display: flex;
+    justify-content: flex-start;
+}
+#containerFlexEnd{
+    border: 1px solid white;
+    display: flex;
+    justify-content: flex-end;
+}
+#containerCenter{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}#containerSpaceBetween{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+#containerSpaceAround{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+#containerSpaceEvenly{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+}
+#containerFlexStartVertical{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 800px;
+}
+#containerFlexEndVertical{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 800px;
+}
+#containerCenterVertical{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+#containerSpaceBetweenVertical{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+}
+#containerSpaceAroundVertical{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+}
+#containerSpaceEvenlyVertical{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 800px;
+}
+
+
+#containerFlexStartHorizontalV2{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    align-items: flex-start;
+}
+#containerFlexEndHorizontalV2{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    align-items: flex-end;
+}
+#containerCenterHorizontalV2{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+#containerStretch{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    align-items: stretch;
+}
+#containerBaseline{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    align-items: baseline;
+}
+#containerBaseline :nth-child(1){
+    padding: 30px;
+}
+#containerBaseline :nth-child(3){
+    padding: 50px;
+}
+
+
+
+
+
+#containerFlexStartVerticalV2{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: flex-start;
+}
+#containerFlexEndVerticalV2{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: flex-end;
+}
+#containerCenterVerticalV2{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+}
+#containerStretchVerticalV2{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: stretch;
+}
+#containerBaselineVerticalV2{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: baseline;
+}
+
+
+#containerSeul{
+    border: 1px solid white;
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+#containerSeul :nth-child(2){
+    align-self: flex-end;
+}
+
+
+#containerV3{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+}
+#containerV3 div{
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#containerV3 :nth-child(1){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: blue;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(2){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: purple;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(3){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: rgb(77, 19, 77);
+	border: 1px solid black;
+}
+#containerV3 :nth-child(4){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: blue;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(5){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: purple;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(6){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: rgb(77, 19, 77);
+	border: 1px solid black;
+}
+#containerV3 :nth-child(7){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: blue;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(8){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: purple;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(9){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: rgb(77, 19, 77);
+	border: 1px solid black;
+}
+#containerV3 :nth-child(10){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: blue;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(11){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: purple;
+	border: 1px solid black;
+}
+#containerV3 :nth-child(12){
+    border: 1px solid white;
+    border-radius: 15px;
+	background-color: rgb(77, 19, 77);
+	border: 1px solid black;
+}
+.stretch{
+    align-content: stretch;
+}
+.start{
+    align-content: flex-start;
+}
+.end{
+    align-content: flex-end;
+}
+.center{
+    align-content: center;
+}
+.between{
+    align-content: space-between;
+}
+.around{
+    align-content: space-around;
+}
+.evenly{
+    align-content: space-evenly;
+}
+
+
+#containerV4{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+}
+#containerV4 div{
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#containerOrderV4{
+    border: 1px solid white;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+}
+#containerOrderV4 div{
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#containerOrderV4 :nth-child(1){
+    order: 3;
+}
+#containerOrderV4 :nth-child(2){
+    order: 1;
+}
+#containerOrderV4 :nth-child(3){
+    order: 2;
+}

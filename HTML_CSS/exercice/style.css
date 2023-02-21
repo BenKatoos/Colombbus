@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-image: url(../img/fond.png);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font save web */
+  }
+  
+  #container {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    border: 1px solid gray;
+    box-shadow: 0 1px 0 rgba(126, 122, 122);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 1.3rem 0;
+  }
+  
+  header :first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  img[src="logo1.png"] {
+    margin: 0 2rem 2rem 1rem;
+  }
+  
+  h1 {
+    font-size: 4.2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+  
+  header :first-child h3 {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: #f583e3;
+  }
+  
+  header :first-child h3:hover {
+    color: blueviolet;
+  }
+  
+  /* style au niveau de la deuxième div du header */
+  header :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  

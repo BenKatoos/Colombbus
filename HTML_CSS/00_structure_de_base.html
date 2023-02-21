@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Ceci est un commentaire-->
+<!--
+    Doctype est la première balise obligatoire dans une page html : c'est une instruction au navigateur web sur la version du langage dont la page est écrite et elle désigne le type de document pour le navigateur ici .html
+-->
+<html lang="fr">
+<!-- 
+    HTML est la seconde balise obligatoire , elle désigne le début de la page , c'est elle qui va receuillir les deux principales éléments de la hiérarchie : head et body Elle englobe tous les éléments d'une page web. L'attribut lang dont la valeur inscrite fr désigne la langue utilisé pour le contenue de la page. Le français utilisé côté utilisateur. Important pour l'accessibilité. Lorsque l'on donne une valeur zxx: on utilise cette abrévation lorsque l'on est essentiellement en lorem ipsum
+-->
+
+<head>
+    <!--
+    Élément d'en-tête la balise head regroupe toutes les méta-informations et contient les paramètres d'en-têtes de la page HTML qui sont pour la plupart invisible pour l'internaute
+-->
+    <meta charset="utf-8">
+    <!--
+        L'encodage des caractères pour afficher les caractères spéciaux tels que les accents => utf-8
+    -->
+    <!--
+        Les meta sont les balises qui fournissent des meta-données au navigateur et au moteur de recherche c'est à dire des informations au sujet de la page en question Il existe de très nombreuse balise meta, les plus utilisé :La balise <meta charset=""> permet  l'encodage des caractères. Il est recommandé de la placé en tête de la balise head, surtout avant la balise <title> car ce dernier peut déja être concerné par l'encodage des caractères. Une seule valeur cependant devrait être utilisée aujourd'huis autant que possible : utf-8 cette méthode d'encodage permet d'afficher sans aucun problème pratiquement tous les symboles de toutes les langues de notre planète. C'est pour cela que j'ai indiqué utf-8 dans cette balise
+    -->
+    <title>Ma page HTML-Structure de base de la page</title>
+    <!--
+        Le titre de la page, cette balise est obligatoire le contenue de cette élément n'apparait pass directement dans la page mais sur l'onglet, il est utilisé : -par le navigateur WEB, dans le titre de la fenetre, les onglets, comme titres de marque page.-par les moteurs de recherches et divers outils comme titre de résulats de recherche
+    -->
+    <!-- 
+        3 façon pour déclarer le style
+        - faire du style dans la balise <style> directement dans la partie head! on peut désormais grâce à cette méthode visé plusieurs éléments d'un coup 
+            -Faire du style en ligne : avec un attribut style dans la balise
+            -Déclarer le style dans une feuille de styles
+    -->
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/00_structure_de_base.css">
+
+</head>
+<!--Le début de la partie visible dans le navigateur-->
+
+<body style="background-image: url(image/systemesolaire.png);">
+    <!--
+        Tout ce qui sera affiché sur la page s'écrit à l'interieur de la balise body, le corps du documents
+    -->
+    <h1>Ma Page HTML</h1>
+    <h2>Bienvenue Sur Mon Site</h2>
+    <p style="background-color: white;">Ceci est une page d'introduction au HTML</p>
+
+</body>
+
+</html>

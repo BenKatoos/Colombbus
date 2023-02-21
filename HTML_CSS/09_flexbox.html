@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi Ma Dixième Page HTML">
+    <meta name="author" content="Choaib Landoulsi">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/09_flexbox.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Ma Dixième Page HTML</title>
+</head>
+
+<body>
+    <h1>FlexBox</h1>
+    <section>
+        <h2>A | Comportment Normal</h2>
+        <p>Le principe de la mise en page avec flexbox est simple : vous définissez un conteneur, et à l'intérieur vous
+            placer plusieurs éléments.</p>
+        <div class="style" id="containerA">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+    </section>
+    <section>
+        <h2>B | Ajout de flex au conteneur</h2>
+        <p>display:flex ->appliquer que le conteneur, les blocs intérieurs se positionnent sur le côté</p>
+        <div class="style" id="containerB">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+    </section>
+    <section>
+        <h2>C | Direction</h2>
+        <p>Flexbox nous permet d'agencer ces éléments dans le sens que l'on veut. Avec flex-direction, on peut les
+            positionné aussi bien horizontalement que verticalement, ou encore les inversés. Il peut prendre les valeurs
+            suivante :<br>
+            -> row : organisé sur une ligne (par défaut) <br>
+            -> column : organisé sur une colonne <br>
+            -> row-reverse : organisé sur une ligne en ordre inversé <br>
+            -> column-reverse : organisé sur une colonne en ordre inversé <br>
+        </p>
+
+        <h3>Row</h3>
+        <div class="style" id="containerC">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h3>Row-reverse</h3>
+        <div class="style" id="containerCa">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h3>Column</h3>
+        <div class="style" id="containerCb">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h3>Column-reverse</h3>
+        <div class="style" id="containerCc">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>D | Retour à la ligne</h2>
+        <p>
+            Par défaut les blocs essaient de rester sur la même ligne s'ils n'ont pas la place (ce qui provoque des bugs
+            de design parfois) Si vous voulez vous pouvez demandr à ce que les blocs aillent à la ligne lorsqu'ils n'ont
+            plus la place avec <span>flex-wrap</span> qui peut prendre ces valeurs : <br>
+            -> - nowrap<br>
+            -> - wrap : les éléments vont à la ligne quand il n'y a plus de place<br>
+            -> - wrap-reverse : les éléments vont à la ligne quand il n'y a plus de place mais de façon inversé
+
+        </p>
+        <h3>Wrap</h3>
+        <div class="style" id="containerD">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h3>Wrap-reverse</h3>
+        <div class="style" id="containerD-r">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+    </section>
+    <section>
+        <h2>E | Alignement</h2>
+        <p>
+            Les éléments sont organisé soit horizontalement (par défaut) soit verticalement. Cela définit ce qu'on
+            appelle l'axe principal. Il y'a aussi un axe secondaire (cross axis) : <br>
+            -> si ces éléments sont organisé horizontalement l'axe secondaire est l'axe vertical <br>
+            -> si ces éléments sont organisé verticalement l'axe secondaire est l'axe horizontal <br>
+        </p>
+        <h3>Alignement sur l'axe principal</h3>
+        <p>Afin d'aligner nos éléments sur l'axe principal : <br>
+            <span>justify-content</span><br>
+            elle peut prendre comme valeur : <br>
+            -> flex-start : aligner au début (par défaut)<br>
+            -> flex-end : aligner à la fin <br>
+            -> center : aligner au centre <br>
+            -> space-between : les éléments sont étirés sur tout l'axe (il y'a de l'espace entre eux)<br>
+            -> space-around : les éléments sont étirés sur tout l'axe mais il laisse aussi de l'espace sur les
+            extrémitées<br>
+            -> space-evenly: les élments sont répartis uniformément dnas le conteneur d'alignement le lonf de l'axe
+            principal.
+        </p>
+        <h4>Flex-Start | direction horizontal</h4>
+        <div class="style" id="containerFlexStart">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Flex-End | direction horizontal</h4>
+        <div class="style" id="containerFlexEnd">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Center | direction horizontal</h4>
+        <div class="style" id="containerCenter">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Space-Between | direction horizontal</h4>
+        <div class="style" id="containerSpaceBetween">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>iv>
+        </div>
+        <h4>Space-Around | direction horizontal</h4>
+        <div class="style" id="containerSpaceAround">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Space-Evenly | direction horizontal</h4>
+        <div class="style" id="containerSpaceEvenly">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <p>
+            Si mes éléments sont dans une direction verticale. L'axe principal est l'axe vertical et inversement.
+        </p>
+        <h4>Flex-Start | Direction vertical</h4>
+        <div class="style" id="containerFlexStartVertical">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Flex-End | Direction vertical</h4>
+        <div class="style" id="containerFlexEndVertical">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Center | Direction vertical</h4>
+        <div class="style" id="containerCenterVertical">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Space-Between | Direction vertical</h4>
+        <div class="style" id="containerSpaceBetweenVertical">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Space-Around | Direction vertical</h4>
+        <div class="style" id="containerSpaceAroundVertical">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Space-Evenly | Direction vertical</h4>
+        <div class="style" id="containerSpaceEvenlyVertical">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h3>Alignement sur l'axe secondaire | align-items</h3>
+        <p>
+            Afin d'aligner nos éléments sur l'axe secondaire :
+            <span>align-items</span><br>
+            elle peut prendre comme valeur : <br>
+            -> flex-start : aligner au début
+            -> flex-end : aligner à la fin
+            -> center : aligner au milieu
+            -> stretch : les éléments sont étirés sur tout l'axe (valeur par défaut)
+            -> baseline : aligner sur la ligne de base
+        </p>
+
+        <h4>Flex-Start | Direction Horizontal</h4>
+        <div class="style" id="containerFlexStartHorizontalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+
+        <h4>Flex-End | Direction Horizontal</h4>
+        <div class="style" id="containerFlexEndHorizontalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Center | Direction Horizontal</h4>
+        <div class="style" id="containerCenterHorizontalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Stretch | Direction Horizontal</h4>
+        <div class="style" id="containerStretch">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Baseline | Direction Horizontal</h4>
+        <div class="style" id="containerBaseline">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+
+
+
+        <h4>Flex-Start | Direction Vertical</h4>
+        <div class="style" id="containerFlexStartVerticalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+
+        <h4>Flex-End | Direction Vertical</h4>
+        <div class="style" id="containerFlexEndVerticalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Center | Direction Vertical</h4>
+        <div class="style" id="containerCenterVerticalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Stretch | Direction Vertical</h4>
+        <div class="style" id="containerStretchVerticalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+        <h4>Baseline | Direction Vertical</h4>
+        <div class="style" id="containerBaselineVerticalV2">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+
+        <h3>Alignement d'un seul élément</h3>
+        <p>
+            Il est possible de faire une exception pour un seul élément sur l'axe secondaire avec
+            <span>align-self</span>
+        </p>
+        <h4>align-self : flex-end</h4>
+        <div class="style" id="containerSeul">
+            <div class="styleV2">Élement 1</div>
+            <div class="styleV2">Élement 2</div>
+            <div class="styleV2">Élement 3</div>
+        </div>
+    </section>
+    <section>
+        <h2>F | Répartir plusieurs lignes</h2>
+        <p>Si vous avez plusieurs lignes dans votre flex-box vous pouvez choisir comment celle-ci seront réparties
+            avec <span>align-content</span> Cette propriété permet de gerer l'alignement des différents lignes (ou
+            colonnes)
+            les par rapports au autres. Cette propriété n'aura d'effet que si le conteneur flexible possède plusieurs
+            lignes ( si l'axe principal est horizontal) ou plusieurs colonnes (si l'axe principalest est vertical) et
+            que si le flex-wrap est présent.
+            Les valeurs de cette propriété : <br>
+            -> flex-start : les éléments sont placés au début <br>
+            -> flex-end : les éléments sont placés à la fin <br>
+            -> center : les éléments sont placé au centre <br>
+            -> space-between : les éléments sont séparé avec de l'espace entre eux <br>
+            -> space-around : les éléments sont séparé avec de l'espace entre eux mais il y a aussi de l'espace au début
+            ainsi qu'à la fin <br>
+            -> space-evenly: les élments sont répartis uniformément dnas le conteneur d'alignement le lonf de l'axe
+            principal.
+            -> stretch : (valeur par défaut) les éléments s'étirent afin d'occuper tout l'espace <br>
+
+        </p>
+        <h3>Stretch -> par défaut</h3>
+        <div class="style stretch" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+        <h3>Flex-Start</h3>
+        <div class="style start" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+        <h3>Flex-End</h3>
+        <div class="style end" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+        <h3>Center</h3>
+        <div class="style center" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+        <h3>Space-Between</h3>
+        <div class="style between" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+        <h3>Space-Around</h3>
+        <div class="style around" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+        <h3>Space-Evenly</h3>
+        <div class="style evenly" id="containerV3">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+            <div>Éléments 4</div>
+            <div>Éléments 5</div>
+            <div>Éléments 6</div>
+            <div>Éléments 7</div>
+            <div>Éléments 8</div>
+            <div>Éléments 9</div>
+            <div>Éléments 10</div>
+            <div>Éléments 11</div>
+            <div>Éléments 12</div>
+        </div>
+    </section>
+    <section>
+        <h2>G | Ordre</h2>
+        <p>
+            Sans changer le code HTML, nous pouvons modifier l'oredre des éléments en css grâce à la propriété order.
+            Indiqué simplement un nombre et les élémentsseront trié du plus petit au plus grand nombre
+
+        </p>
+        <h3>Par Défaut</h3>
+        <div class="style" id="containerV4">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+        </div>
+
+        <h3>Éléments 1 -> Ordre 3 | Éléments 2 -> Ordre 1 | Éléments 3 -> Ordre 2</h3>
+        <div class="style" id="containerOrderV4">
+            <div>Éléments 1</div>
+            <div>Éléments 2</div>
+            <div>Éléments 3</div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Maryam" content="Ma boutique de vente en ligne" />
+    <link rel="stylesheet" href="../../../BOUTIQUE/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>La boutique</title>
+
+    <style>
+        .rouge {
+            margin: 100px;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            bottom: 20px;
+            line-height: 200px;
+        }
+
+        .violet {
+            margin: 100px;
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            bottom: 20px;
+            line-height: 200px;
+        }
+
+        .carre {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+            color: hsl(287, 100%, 3%);
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        p:hover {
+            background-color: plum;
+            color: white;
+        }
+
+        .bleu,
+        .bleu2,
+        .bleu3,
+        .bleu4 {
+            background-color: blue;
+            line-height: 80px;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+        }
+
+        .rose,
+        .rose2,
+        .rose3,
+        .rose4 {
+            background-color: rgb(255, 0, 43);
+            line-height: 80px;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+        }
+
+        .bleu,
+        .rose {
+            top: -40px;
+            left: 160px;
+        }
+
+        .bleu2,
+        .rose2 {
+            bottom: -40px;
+            right: 160px;
+        }
+
+        .bleu3,
+        .rose3 {
+            bottom: -40px;
+            left: 160px;
+        }
+
+        .bleu4,
+        .rose4 {
+            top: -40px;
+            right: 160px;
+        }
+    </style>
+</head>
+<!-- corps de ma page -->
+
+<body>
+    <div class="carre">
+        <div class="rouge">
+            <p>parent</p>
+            <div class="bleu">
+                <p>enfant</p>
+            </div>
+            <div class="bleu2">
+                <p>enfant</p>
+            </div>
+            <div class="bleu3">
+                <p>enfant</p>
+            </div>
+            <div class="bleu4">
+                <p>enfant</p>
+            </div>
+        </div>
+        <div class="violet">
+            <p>parent</p>
+            <div class="rose">
+                <p>enfant</p>
+            </div>
+            <div class="rose2">
+                <p>enfant</p>
+            </div>
+            <div class="rose3">
+                <p>enfant</p>
+            </div>
+            <div class="rose4">
+                <p>enfant</p>
+            </div>
+        </div>
+    </div>
+    <div class="carre">
+        <div class="violet">
+            <p>parent</p>
+            <div class="rose">
+                <p>enfant</p>
+            </div>
+            <div class="rose2">
+                <p>enfant</p>
+            </div>
+            <div class="rose3">
+                <p>enfant</p>
+            </div>
+            <div class="rose4">
+                <p>enfant</p>
+            </div>
+        </div>
+        <div class="rouge">
+            <p>parent</p>
+            <div class="bleu">
+                <p>enfant</p>
+            </div>
+            <div class="bleu2">
+                <p>enfant</p>
+            </div>
+            <div class="bleu3">
+                <p>enfant</p>
+            </div>
+            <div class="bleu4">
+                <p>enfant</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

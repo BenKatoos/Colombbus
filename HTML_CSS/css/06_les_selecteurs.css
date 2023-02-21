@@ -1,0 +1,111 @@
+@font-face{
+    font-family: "raster"; 
+	src: url("../font/raster.ttf") format("truetype");
+}
+body{
+    background-image: url(../image/chateau.png);
+    font-size: 18px;
+    font-family: "raster";
+}
+div{
+    background-color: teal;
+    width: 50%;
+    padding: 10px;
+}
+div p:not(h4~p){
+    color : gold;
+}
+div :first-child{
+    /*pseudo-class :nth-child() -> permet d'acceder à un élément malgrés sont indice*/
+    color: rgb(124, 0, 214);
+    font-weight: bold;
+}
+section div :last-child :not(#zoneD) :not(.psde){
+    background-color: deeppink;
+}
+div :nth-child(even) :not(#zone1 p) :not(ul>li){
+    background-color: lawngreen;
+}
+div :nth-child(odd) :not(.psde) :not(#zoneD) :not(li){
+    font-size: 0.5em;
+}
+div :nth-child(3), div p:nth-child(6){
+    text-transform: uppercase;
+}
+section.select p{
+    color: red;
+}
+section.select p:first-of-type{
+    color: maroon;
+}
+section.select p:nth-of-type(5){
+    text-transform: uppercase;
+}
+section.select p:last-of-type{
+    color: midnightblue;
+    text-transform: uppercase;
+}
+
+section div:not(.zoneB){
+    font-weight: bolder;
+}
+#zoneD span{
+    color: blue;
+}
+
+#zone1{
+    height: 150px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#zone1 h3, #zone1 p{
+    color: black;
+}
+#zone1::before{
+    content: "Rajouter avant la zone 1";
+}
+#zone1::after{
+    content: "Rajouter après la zone 1";
+    color: gold;
+}
+/*::before et ::after sont des pseudo-element permetten de générer ces élements virtuells lors de l'interpretation du css*/
+p.psde, p.psde span{
+    color: #110133;
+}
+p.psde span {
+    position : relative;
+}
+p.psde span::before{
+    content: "🐕";
+}
+p.psde span::after{
+    content: "👑";
+    position: absolute;
+    top: -20px;
+    left: 47px;
+}
+h4+p{
+    /*Selectionne la première balise p situé après h4*/
+    font-weight: bolder;
+    color: blanchedalmond;
+}
+h4~a{
+    /* Selectionne toutes les balises a apres h4*/
+    background-color: aquamarine;
+}
+ul>li {
+    list-style-type: square;
+    color: white;
+}
+/*selectione tous les a qui ont un attribut title*/
+a[title]{
+    color: green;
+}
+a[title="Cliquez ici"]{
+    color: orange;
+}
+/*selectione toutes les balises*/
+*{
+    font-style: italic;
+}

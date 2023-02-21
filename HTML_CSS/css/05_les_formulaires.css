@@ -1,0 +1,11 @@
+body{
+    background-image: url(../image/montagne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+textarea{
+    background-color: transparent;
+}
