@@ -1,0 +1,9 @@
+.text-danger{
+    color: aqua !important;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: auto;
+}

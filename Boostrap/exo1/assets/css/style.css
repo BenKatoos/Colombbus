@@ -1,0 +1,33 @@
+h4{
+    background-color: darkcyan ;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    border: solid 2px black;
+}
+.bg-teal{
+    background-color: teal;
+}
+.a{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin: auto;
+}
+.a1{
+    width: 49%;
+    height: 30rem;
+    background-color: gray;
+    color: rgb(59, 59, 59);
+    font-size: 4rem;
+    text-align: center;
+    line-height: 30rem;
+    padding: 2rem 2rem ;
+}
+.a2{
+    width: 49%;
+    height: 30rem;
+    background-color: teal;
+    text-align: center;
+    padding: 2rem 2rem ;
+}

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.28);
+}
+.navbar a {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.navbar .logo {
+    font-weight: bolder;
+    font-size:3rem ;
+}
+.nav-links ul {
+    display: flex;
+}
+.nav-links ul li {
+    margin: 0 25px;
+}
+.nav-links ul li.active a {
+    color: darkgreen;
+    font-weight: 600;
+}
+
+.navbar .menuBurger {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .navbar .menuBurger  {
+        display: block;
+    }
+    .navbar {
+      padding: 0; 
+    }
+    .nav-links{
+        background-color: rgba(255, 255, 255, 0.20);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(7px); /* permet de filtrer l'arriere plann*/
+    }
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}

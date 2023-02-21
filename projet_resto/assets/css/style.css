@@ -1,0 +1,219 @@
+:root{
+    --fontU:'Ubuntu', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #a0c4b6;
+}
+#container{
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+header{
+    background-image: url(../img/planches.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6rem 2rem 0 3rem;
+    font-style: italic;
+}
+h1{
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: bolder;
+
+}
+h2{
+    font-family: var(--fontU);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+h4{
+    font-family: var(--fontU);
+    color: #EC64A9;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+#logo{
+    width: 20rem;
+    height: 20rem;
+    transform: rotateY(180deg);
+
+}
+.title sup{
+    vertical-align: super;
+    font-size: 2rem;
+}
+.title sup::after{
+    content: "_";
+    position: relative;
+    top: 2px;
+    left: -11px;
+    font-size: 2.5rem;
+    display: inline-block;
+    transform: rotate(-7deg);
+}
+
+hr{
+    width: 3.2rem;
+    height: .6rem;
+    border: solid .1rem #EC64A9; 
+    background-color: #EC64A9;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+.milieuheader{
+    position: relative;
+}
+.triangle{
+    border-top: 110px solid #db447bc2;
+    border-left: 130px solid transparent;
+    position: absolute;
+    right: 50px;
+    top: 80px;
+}
+header span{
+    font-size: 9rem !important;
+    color: #EC64A9;
+}
+main, footer{
+    background-image: url(../img/motif.jpg);
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+section p{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 1.028rem;
+    padding: 1rem 5rem;
+    text-align: center;
+}
+section img{
+    width: 100%;
+    display: flex;
+    
+}
+
+
+
+/* La 1ère section */
+
+section:first-child div:last-child{
+    width: 60%;
+}
+
+section:first-child img {
+    transform: rotateY(180deg);
+}
+section:first-child div:first-child{
+    width: 40%;
+}
+/* 2eme section */
+
+section:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+section:nth-child(2) div:last-child{
+    width: 70%;
+}
+
+section:nth-child(2) div:first-child{
+    width: 30%;
+}
+
+/* 3ème section */
+
+section:nth-child(3) div:last-child{
+    width: 60%;
+}
+section:nth-child(3) div:first-child{
+    width: 40%;
+}
+
+/* les div avec du texte*/
+
+section>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+section:nth-child(2)>div div:first-child{
+    background-image: url(../img/graines_01.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+}
+
+footer{
+    display : flex;
+    justify-content : space-between;
+    padding: 7rem 5rem 4rem;
+}
+footer>div:last-child{
+    align-self: flex-end;
+    color: #EC64A9;
+    /* width: 200px;
+    justify-content: space-around;
+    display: flex; */
+}
+
+footer h2{
+    font-family: 'Bangers', cursive;
+    margin: 0;
+}
+footer .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+footer p{
+    font-family: var(--fontU);
+    font-size: 1rem;
+    font-weight: bold;
+}
+footer p:not(:last-child){
+    margin-bottom: 1.8rem;
+}
+footer i{
+    margin-right: .7rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

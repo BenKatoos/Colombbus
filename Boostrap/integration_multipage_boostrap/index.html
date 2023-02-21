@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi ">
+    <meta name="author" content="Choaib Landoulsi : Page d'accueil de mon site">
+
+    <!-- Lien framework  boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Feuille de style de reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Feuille de style commun de mon header et de mon footer -->
+    <link rel="stylesheet" type="text/css" href="assets/css/commun_style.css">
+    <!-- feuille de style de la page d'accueil -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Accueil</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="assets/img/s1b1.jpeg" alt="robot">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <!-- Je rajoute les class d-flex et justify content end sur les li pour les mettre a droite en mode mobile et crée avec la classe my-3 je creer une marge en haut et en bas sur les a -->
+                        <li class="nav-item d-flex justify-content-end my-3">
+                            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end my-3">
+                            <a class="nav-link" href="a_propos.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-end my-3 " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Première section -->
+        <section class="row justify-content-around align-items-center">
+            <div class="col-lg-3 col-10 d-flex justify-content-center align-items-center my-3 text-uppercase">
+                <a href="index.html" class="fw-bold rounded-3 fs-3">Accueil</a>
+            </div>
+            <div class="col-lg-3 col-10 d-flex justify-content-center align-items-center my-3 text-uppercase">
+                <a href="a_propos.html" class="fw-bold rounded-3 fs-3">À propos</a>
+            </div>
+            <div class="col-lg-3 col-10 d-flex justify-content-center align-items-center my-3 text-uppercase">
+                <a href="contact.html" class="fw-bold rounded-3 fs-3">Contact</a>
+            </div>
+        </section>
+        <!-- Deuxième Section -->
+        <section class="row justify-content-center align-items-center">
+            <div class="col-10 col-lg-6 my-3 d-flex flex-column justify-content-center align-items-center">
+                <h2>
+                    Titre
+                </h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim minima beatae repellat, at,
+                    suscipit dolorum necessitatibus nisi ipsum eos porro debitis in perspiciatis itaque qui hic
+                    assumenda sed quibusdam?
+                </p>
+                <audio src="assets/audio/audio1.mp3" controls></audio>
+            </div>
+            <div class="col-10 col-lg-6 my-3">
+                <img src="assets/img/s2b2.jpeg" alt="plasma" class="w-100 rounded-5">
+            </div>
+        </section>
+        <!-- Troisième Section -->
+        <section class="row my-3 justify-content-center align-items-center">
+            <div class="col-10 col-lg-4 my-3 pt-sm-3-">
+                <video src="assets/video/pexels-nature-feels-7916945.mp4" type="video/mp4" autoplay muted controls
+                    class="w-100">
+                </video>
+            </div>
+            <div class="col-10 col-lg-8 my-3">
+                <img src="assets/img/s3b2.jpeg" alt="image de la 3ème section" class="img-fluid">
+            </div>
+        </section>
+    </main>
+
+    <footer class="row justify-content-around align-items-center">
+        <ul class="col-4 d-flex flex-column justify-content-center align-items-center">
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+        <ul class="col-4 d-flex flex-column justify-content-center align-items-center">
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+        <ul class="col-4 d-flex flex-column justify-content-center align-items-center">
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

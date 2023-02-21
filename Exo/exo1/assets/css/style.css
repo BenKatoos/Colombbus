@@ -1,0 +1,197 @@
+@font-face{
+    font-family: "NexaTextBold", arial;
+    src: url(../font/nexa/Nexa-Trial-Bold.ttf);
+}
+@font-face{
+    font-family: "NexaTextBlack", arial;
+    src: url(../font/nexa/Nexa-Trial-Black.ttf);
+}
+@font-face{
+    font-family: "NexaTextBook",arial;
+    src: url(../font/nexa/Nexa-Trial-Book.ttf);
+}
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #191919;
+    color: white;
+}
+
+
+/* Style pour l'en-tête */
+header{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+header img{
+    width: 6rem;
+}
+header a{
+    text-decoration: none;
+    color: grey;
+}
+nav{
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-transform: uppercase;
+    font-family: "NexaTextBold", arial;
+    font-weight: bold;
+}
+
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Fin style de l'en-tête */
+
+
+/* Style corps du Texte */
+
+
+
+/*style section 1*/
+.section01{
+    margin: 10rem 0;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card a{
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "NexaTextBold", arial;
+    border: 1px solid black;
+    border-radius: 7px;
+    /* display: inline-block;
+    line-height: 1.7rem; */
+    font-size: 1.6rem;
+    padding: 1rem 0.8rem;
+    
+}
+.card div{
+    text-align: center;
+    line-height: 15rem;
+    height: 15rem;
+    width: 35rem;
+    border:1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+.card div:first-child{
+    background-image: url(../img/s1b1.jpeg);
+    background-size: cover;
+}
+.card div:nth-child(2){
+    background-image: url(../img/s1b2.jpeg);
+    background-size: cover;
+}
+.card div:last-child{
+    background-image: url(../img/s1b3.jpeg);
+    background-size: cover;
+}
+
+/*Style section 2*/
+
+
+.section02{
+    margin: 10rem 0;
+}
+.section02 img{
+    height: 35rem;
+    width: 60rem;
+    border: 2px solid rgb(46, 45, 45);
+    border-radius: 10px;
+}
+.audioPhoto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.audioPhoto div:first-child{
+    width: 45%;
+    
+}
+.audioPhoto div:last-child{
+    width: 50%;
+}
+.section02 h1{
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    font-family: "NexaTextBlack", arial;
+}
+.section02 p{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "NexaTextBook",arial;
+}
+/*Style section 3*/
+.section03{
+    height: 50.1rem;
+}
+.videoImage video{
+    background-color: black;
+    width: 30%;
+    height: 50rem;
+    margin: 0;
+}
+.videoImage img{
+    background-color: black;
+    height: 50rem;
+    width: 69%;
+    box-sizing: border-box;
+}
+
+/* Fin Style Corps du Texte */
+
+/*Style Footer*/
+
+footer{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 1.5rem 18rem;
+    font-family: "NexaTextBook",arial;
+}
+footer div{
+    
+    display: flex;
+    flex-direction: column;
+}
+footer div:nth-child(2){
+    border-left: 2px solid rgb(58, 57, 57);
+    
+}
+
+footer div:last-child{
+    border-left: 2px solid rgb(58, 57, 57);
+}

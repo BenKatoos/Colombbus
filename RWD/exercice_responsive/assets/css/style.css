@@ -1,0 +1,270 @@
+
+/*Style header*/
+
+.headerDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.firstDiv{
+    background-color: #5f9ea0;
+    height: 10rem;
+    width: 33.33%;
+    text-align: center;
+    line-height: 10rem;
+}
+.secondDiv{
+    background-color: #008b8b;
+    height: 10rem;
+    width: 33.3333333%;
+    text-align: center;
+    line-height: 10rem;
+}
+.thirdDiv{
+    background-color: #00ced1;
+    height: 10rem;
+    width: 33.33333%;
+    text-align: center;
+    line-height: 10rem;
+}
+
+/* Style nav*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffebcd;
+    margin-bottom: 20px;
+    height: 5rem;
+}
+.nav-links ul {
+    display: flex;
+}
+.nav-links ul li {
+    margin: 0 25px;
+}
+.navbar .point {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: none;
+    rotate: 90deg;
+}
+
+/* 1ère section*/
+
+.articleA{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    margin: 30px 0;
+    overflow: hidden;
+    
+}
+.articleA div{
+    width: 50%;
+    height: 25rem;
+    line-height: 25rem;
+    text-align: center;
+    
+}
+.articleA1{
+    background-color: #a9a9a9;
+    margin-left: 30px;
+}
+.articleA2{
+    background-color: #708090;
+    margin-right: 30px;
+}
+
+/*2eme section*/
+
+.texteA{
+    width: 100%;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #b0e0e6;
+}
+
+/* 3eme section */
+
+.articleB{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articleB div{
+    width: 25%;
+    height: 25rem;
+    line-height: 25rem;
+    text-align: center;
+}
+
+.articleB1{
+    background-color: #87ceeb;
+}
+
+.articleB2{
+    background-color: #40e0d0;
+}
+
+.articleB3{
+    background-color: #2e8b57;
+}
+
+.articleB4{
+    background-color: #98fb98;
+}
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+footer div{
+    width: 50%;
+    line-height: 10rem;
+    text-align: center;
+}
+
+.piedG{
+    background-color: #db7093;
+}
+.piedD{
+    background-color: #afeeee;
+}
+
+/* MediaQueries*/
+
+@media screen and (min-width: 768px) and (max-width:900px){
+    .navbar .point{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .texteA{
+        font-size: 1.4rem;
+    }
+    .articleB{
+        width: 100%;
+        height: 50rem;
+    }
+    .articleB div{
+        width: 50%;
+        height: 25rem;
+        line-height: 25rem;
+        text-align: center;
+    }
+}
+@media screen and (min-width:480px) and (max-width:767px){
+    .texteA{
+        font-size: 1.1rem;
+    }
+    
+    .navbar .point{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .firstDiv{
+        background-color: #5f9ea0;
+        height: 10rem;
+        width: 50%;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .secondDiv{
+        background-color: #008b8b;
+        height: 10rem;
+        width: 50%;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .thirdDiv{
+        background-color: #00ced1;
+        height: 10rem;
+        width: 100%;
+        text-align: center;
+        line-height: 10rem;
+    }
+}
+@media screen and (max-width:479px){
+    .navbar .point{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .firstDiv{
+        background-color: #5f9ea0;
+        height: 10rem;
+        width: 100%;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .secondDiv{
+        background-color: #008b8b;
+        height: 10rem;
+        width: 100%;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .thirdDiv{
+        background-color: #00ced1;
+        height: 10rem;
+        width: 100%;
+        text-align: center;
+        line-height: 10rem;
+    }
+    .articleA{
+        height: 50rem;
+        flex-wrap: wrap;
+    }
+    .articleA div{
+        width: 100%;
+    }
+    .articleA1{
+        margin: 30px 30px 0 30px;
+    }
+    .articleA2{
+        margin: 0 30px 30px 30px;
+    }
+    .articleB{
+        width: 100%;
+        height: 100rem;
+    }
+    .articleB div{
+        width: 100%;
+        height: 25rem;
+        line-height: 25rem;
+        text-align: center;
+    }
+}

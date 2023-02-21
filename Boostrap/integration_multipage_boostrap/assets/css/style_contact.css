@@ -1,0 +1,80 @@
+@font-face{
+    font-family: 'coolveticaRg';
+    src: url(../font/coolvetica\ rg.otf);
+}
+body{
+    font-family: "coolveticaRg" !important;
+}
+
+
+/*Première Section*/
+
+section{
+    font-size: 1.5rem;
+}
+
+section:first-child{
+    background-image: url(../img/s1b3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 130px 0;
+}
+
+h1{
+    font-size: 8rem;
+    margin-bottom: 40px;
+    line-height: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+h1, p{
+    text-align: center;
+}
+
+/* Deuxième section */
+
+section:nth-child(2){
+    background-color: #141414;
+}
+section:nth-child(2) form{
+    background-color: #010101;
+    padding: 40px;
+    text-transform: capitalize;
+}
+section:nth-child(2) form label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 3px solid #191919;
+    margin-bottom: 30px;
+}
+section:nth-child(2) form input, section:nth-child(2) form textarea{
+    background-color: transparent;
+    border: unset;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    padding: 5px;
+    color: inherit;
+    outline: none;
+}
+
+section:nth-child(2) form div button{
+    background-color: #3C3C3C;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 0;
+    border-radius: 5px;
+    line-height: 1rem;
+    transition: all linear .2s;
+}
+section:nth-child(2) form div button:hover{
+    background-color: #191919;
+}
+
+@media screen and (max-width:576px){
+    h1{
+        font-size: 5rem;
+    }
+}

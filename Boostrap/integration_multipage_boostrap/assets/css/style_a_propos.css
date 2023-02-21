@@ -1,0 +1,64 @@
+@font-face{
+    font-family: "coolveticaRg";
+    src: url(../font/coolvetica\ rg.otf);
+}
+
+
+
+/* Première Section */
+
+section{
+    margin-top: 80px !important;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    font-family: "coolveticaRg";
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+section:first-child div{
+    background-image: url(../img/s1b3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 100px 0;
+}
+section:first-child div p, h1{
+    border-radius: 8px;
+    border: rgba(255, 255, 255, .1) solid 1px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
+    margin: 20px 50px;
+    padding: 10px 20px;
+    line-height: 3rem;
+}
+
+/* Deuxième section */
+
+h2{
+    font-family: 'coolveticaRg';
+    font-size: 2.5rem;
+    margin: 4.5rem;
+}
+
+
+section:nth-child(2) {
+    background-image: url(../img/s2b2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px;
+    background-attachment: fixed;
+}
+
+section:nth-child(2) p, h2{
+    text-align: justify;
+}
+

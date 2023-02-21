@@ -1,0 +1,15 @@
+
+.card-header, .card-footer{
+    background-color: #005259;
+}
+h3{
+    color: #005259;
+}
+.bg{
+    background-color: #005259;
+    color: white;
+}
+
+h3, h5{
+    color: #005259;
+}
