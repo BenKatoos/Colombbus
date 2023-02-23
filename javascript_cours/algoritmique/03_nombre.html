@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi ">
+    <meta name="author" content="Choaib Landoulsi : Nombre javascript ">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Les nombres </title>
+</head>
+
+<body>
+    <script>
+        // Pour initialisé un nombre, il suffit de l'écrire sans guillemet.
+
+        const a = 5;
+        const b = 10;
+        const c = 15;
+        const d = 20;
+        const f = 5 % 10;
+        console.log(f);
+
+        // Nous pouvons effectué tout type de calcul
+
+        // addition
+
+        let addition = 10 + 5;
+        document.write('Le résultat de l\'addition de 10 + 5 est ' + addition + '<br>');
+
+        // soustraction
+
+        let soustraction = 25 - 15;
+        document.write('Le résultat de la soutraction de 25 - 15 est ' + soustraction + '<br>');
+
+        // Multiplication
+        let multiplication = 25 * 15;
+        document.write('Le résultat de la multiplication de 25 * 15 est ' + multiplication + '<br>');
+
+        // Division
+        let division = 25 / 15;
+        document.write('Le résultat de la division de 25 / 15 est ' + division + '<br>');
+
+        // Modulo
+        let modulo = 25 % 15;
+        document.write('Le résultat de la modulo de 25 % 15 est ' + modulo + '<br>')
+
+        // -----------------Les raccourcis
+
+        let g = 10;
+        document.write(g + ' G <br>');
+        g = g + 5;
+        document.write(g + ' G <br>');
+        // ou
+        let h = 10;
+        h += 5;
+        document.write(h + ' H <br>');
+
+        //-------------------- Incrémentations et décrémentation
+        //      Nous pouvons ajouter 1 ou enlever 1 discrètement avec ++ ou --
+        let i = 50;
+        i++;
+        document.write(i + '<br>');
+
+        i--;
+        document.write(i + '<br>');
+        // Exercice
+        // recuperer dans un prompt la valeur souhaiter par l'utilisateur
+        // envoyer une alerte indiquant le résultat au carré et au cube de la valeur
+
+
+        let value1 = 0;
+        let value = prompt(' votre valeur');
+
+        document.write('<br>' + value);
+        value1 = value;
+        value = value * value;
+
+        alert(value);
+
+        value1 = value1 * value1 * value1;
+
+        alert(value1);
+
+
+        const e = (a * a) + (3 * b) + c;
+        console.log(e);
+        if (e > 0) {
+            document.write('<br> <br> Delta positif <br>');
+        }
+        else {
+            document.write('<br> <br> Delta négatif <br>');
+        }
+    </script>
+</body>
+
+</html>

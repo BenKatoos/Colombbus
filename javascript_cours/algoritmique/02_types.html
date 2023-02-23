@@ -15,7 +15,58 @@
     <script>
         // LES DIFFERENTS TYPES DE VALEURS
 
-        //
+        /*
+        Il existe plusieurs types de valeurs que l'on peut assigner à nos variables.
+        On a :
+        -> les chaines de caractères -> string : phrase, mot entre guillemet
+        -> chiffre, nombres ->
+        -> booléen (boolean in english) => true or false
+        -> tableau (array) => ["julien", 10]
+        -> null
+        -> classes
+        -> objets
+        -> fonction
+        */
+        // String :
+        // en js, la convention de nommage est le CamelCase
+        let myText = "Here is a sentence written with a double quote";
+        console.log(myText);
+        let ourText = 'Here is a sentece written with a simple quote';
+        console.log(ourText);
+        ourText = 'Voici aujourd\'hui une phrase écrit avec des guillemets simple';
+        console.log(ourText);
+        // Number
+        let number = 55; //affectation se fait sans quote
+        let negatifNumber = -55; // tous les types d'écritures numériques sont possibles
+        let decimalNumber = 5.5;
+        console.log(number, negatifNumber, decimalNumber);
+        //Booléen : il ne prend que deux valeurs True or False
+        let choice = true;
+        console.log(choice);
+
+        // Afin de verifier le type d'une variable on utilise typeof()
+        console.log(typeof (myText));
+        console.log(typeof (choice));
+        console.log(typeof (negatifNumber));
+
+
+        // --------------------------
+        // AFFICHAGE
+        // --------------------------
+        document.write(myText + '<br>', ourText + '<br>', number + '<br>', negatifNumber + '<br>', decimalNumber + '<br>', choice + '<br>');
+        //Boite de dialogue
+        alert('⚠️ This is a warning message ⚠️');
+        // afficher une alerte
+
+        confirm("Vous confirmez ?");
+        // Confirmer une action
+
+        prompt("Voici un prompt");
+        // récuperer une donée de l'utilisateur
+
+        let myAge = prompt('Quel est votre age ?')
+        console.log(myAge)
+
     </script>
 </body>
 
