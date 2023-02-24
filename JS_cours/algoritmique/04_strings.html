@@ -8,14 +8,14 @@
     <meta name="description" content="Choaib Landoulsi ">
     <meta name="author" content="Choaib Landoulsi : Nombre javascript ">
     <link rel="stylesheet" type="text/css" href="">
-    <title>Les nombres </title>
+    <title>String </title>
 </head>
 
 <body>
     <script>
-        const name = "Ben";
-        const surname = "Katoos";
-        document.write(name + ' ' + surname + '<br>');
+        const NAME = "Ben";
+        const SURNAME = "Katoos";
+        document.write(NAME + ' ' + SURNAME + '<br>');
 
         let a = 10;
         let b = 5;
@@ -29,6 +29,35 @@
 
         let age = prompt('Saisissez votre age')
         document.write('Vous avez ' + age + ' ans ! <br>');
+
+        let fruits = 'Pommes';
+        console.log(fruits);
+        fruits += ' Fraises'
+        console.log(fruits);
+        fruits += ' Mangues';
+        console.log(fruits);
+        // Contrairement au "=" d'affectation qui remplace la valeur de la variable, j'utilise ici += qui va ajouter à la valeur de la variable
+
+        let quelqueChose;
+        console.log(quelqueChose);
+        // affiche undefined car aucune valeur a été attribué
+
+
+
+        let unNombre = '24';
+        console.log(unNombre);
+        console.log(typeof (unNombre));
+
+        // Pour convertir le string '24' en nombre 24 (string => number)
+        unNombre = parseFloat(unNombre);
+        console.log(unNombre);
+        console.log(typeof (unNombre));
+
+        // J'utilise la même variable pour la reconvertir en string (number => string)
+        unNombre = unNombre.toString();
+        console.log(unNombre);
+        console.log(typeof (unNombre));
+
     </script>
 </body>
 

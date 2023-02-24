@@ -15,12 +15,12 @@
     <script>
         // Pour initialisé un nombre, il suffit de l'écrire sans guillemet.
 
-        const a = 5;
-        const b = 10;
-        const c = 15;
-        const d = 20;
-        const f = 5 % 10;
-        console.log(f);
+        const A = 5;
+        const B = 10;
+        const C = 15;
+        const D = 20;
+        const F = 5 % 10;
+        console.log(F);
 
         // Nous pouvons effectué tout type de calcul
 
@@ -65,6 +65,22 @@
 
         i--;
         document.write(i + '<br>');
+
+
+        // i++ affecte puis incrémente la valeur. Dans l'exemple ci dessous, i++ incrémentera la valeur de i, mais retournera la valeur d'origine avant d'être incréménté.
+
+        let j = 1;
+        console.clear();
+        let k = j++;
+        console.log(k); // =1
+        console.log(j); // =2
+        console.clear();
+
+        // ++l incrémente puis affecte la valeur. Dnas l'exemple ci dessous, ++l incrémentera la valeur de k, puis retournera la valeur incrémenté.
+        let l = 1;
+        let m = ++l;
+        console.log(l); // =2
+        console.log(m); // =2
         // Exercice
         // recuperer dans un prompt la valeur souhaiter par l'utilisateur
         // envoyer une alerte indiquant le résultat au carré et au cube de la valeur
@@ -95,9 +111,9 @@
         alert('Resultat au carré : ' + valeurCarre + ' resultat au cube : ' + valeurCube)
 
 
-        const e = (a * a) + (3 * b) + c;
-        console.log(e);
-        if (e > 0) {
+        const E = (A * A) + (3 * B) + C;
+        console.log(E);
+        if (E > 0) {
             document.write('<br> <br> Delta positif <br>');
         }
         else {

@@ -28,6 +28,15 @@
         -> fonction
         */
         // String :
+        // Nous pouvons initialiser une chaine de caractère de plusieur façon.
+        // /////// Avec des guillemets double (double quote)
+
+        let variable = "test";
+        console.log(variable);
+        /////// Avec des guillemets simple 
+        let variable2 = "test2";
+        console.log(variable2);
+
         // en js, la convention de nommage est le CamelCase
         let myText = "Here is a sentence written with a double quote";
         console.log(myText);
@@ -35,11 +44,21 @@
         console.log(ourText);
         ourText = 'Voici aujourd\'hui une phrase écrit avec des guillemets simple';
         console.log(ourText);
+
+        //Avec des backquotes
+        let bienvenue = `Aujourd'hui c'est l'arrivée de Sahar <br>`;
+        document.write(bienvenue);
+        const PRENOM = "Sahar";
+        // Avec les backquotes  je peux intégrer une variable dans une chaîne de caractères.
+        bienvenue = `Aujourd'hui c'est l'arrivée de ${PRENOM}<br>`;
+        document.write(bienvenue)
+
         // Number
         let number = 55; //affectation se fait sans quote
         let negatifNumber = -55; // tous les types d'écritures numériques sont possibles
         let decimalNumber = 5.5;
         console.log(number, negatifNumber, decimalNumber);
+
         //Booléen : il ne prend que deux valeurs True or False
         let choice = true;
         console.log(choice);
