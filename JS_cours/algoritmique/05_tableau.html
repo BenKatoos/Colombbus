@@ -9,9 +9,16 @@
     <meta name="author" content="Choaib Landoulsi : Tableau javascript ">
     <link rel="stylesheet" type="text/css" href="">
     <title>Les Tableaux </title>
+
+    <!-- <style>
+        body {
+            text-transform: capitalize;
+        }
+    </style> -->
 </head>
 
 <body>
+
     <script>
         /////////////////*********************
         //////////// LES TABLEAUX
@@ -52,6 +59,19 @@
         document.write(annuaire[0][1], ' ', annuaire[1][1], '<br>');
         document.write(annuaire[0][2], ' ', annuaire[1][2], '<br>');
 
+        // tableau multidimentionnel indéxé
+
+        let tableau = [
+            [
+                "prenom", "nom", "tel"
+            ],
+            [
+                "Hasna", "Godart", "1515151515"
+            ],
+        ]
+
+        document.write(tableau[0][1], ' : ', tableau[1][1], ', ', tableau[0][0], ' : ', tableau[1][0], ', ', tableau[0][2], ' : ', tableau[1][2], "<br> <br>")
+
         //--------------------------
         /////// Tableau non indéxés
         //--------------------------
@@ -68,6 +88,7 @@
         console.log(coordonee['prenom']);
         console.log(coordonee.nom);
 
+
         //----------------------------------------------
         /////// Tableau non indéxés multidimentionnel
         //----------------------------------------------
@@ -75,11 +96,120 @@
         let contact = [
             { prenom: "Linda", nom: "Bentouil", tel: "89621324", },
             { prenom: "Mariam", nom: "Cisse", tel: "89625464", },
-            { prenom: "Rayen", nom: "Daly", tel: "89621354", }
+            { prenom: "Rayen", nom: "Daly", tel: "89621354 <br> ", }
         ];
         console.log(contact[0].prenom, contact[0].nom);
 
+        // Tableau à 4 dimension
 
+        let array4Dimensions = [
+            {
+                prenom: "Hugo",
+                nom: "Liegeard",
+                coordonees: {
+                    email: "hugo.liegeard@gmail.com",
+                    telephone: {
+                        fix: 1212121211,
+                        fax: 1212121212,
+                        portable: {
+                            privé: 2121212121,
+                            pro: 2121212122,
+                        },
+                    },
+                    adresse: {
+                        ville: "Evry",
+                        cp: 91000,
+                        pays: {
+                            code: "FR",
+                            nom: "France",
+                        },
+                    },
+                },
+            },
+        ]
+
+        document.write(array4Dimensions[0].coordonees.email, '<br>', array4Dimensions[0].coordonees.adresse.ville, ' ', array4Dimensions[0].coordonees.adresse.cp, ' ', array4Dimensions[0].coordonees.adresse.pays.code, ' ', array4Dimensions[0].coordonees.adresse.pays.nom);
+        console.log(array4Dimensions[0]['coordonees']['email']);
+
+        //---------------------------------------------------
+        //////// Les propriétés et les métodes des tableaux
+        //---------------------------------------------------
+
+        let couleur = ["Red", "Yellow", "Green"];
+        console.log(couleur);
+        console.log(couleur.length);
+        //lenght propriété pour affiché sur ma console le nombre d'élément que contient mon tableau
+
+
+
+
+
+        //Pour ajouter un élément en fin de mon tableau, j'utilise la méthode push()
+        couleur.push("Violet");
+        console.log(couleur);
+        console.log(couleur.length);
+
+        // Pour supprimer le dernier élément du tableau, j'utilise la méthode pop()
+        couleur.pop();
+        console.log(couleur);
+
+
+        //Pour ajouter un élément au début du tableau, j'utilise la méthode unshift()
+        couleur.unshift("Rose");
+        console.log(couleur);
+
+
+        // Pour ajouter, supprimer, remplacer, des éléments n'importe ou j'utilise la méthode splice()
+        // la méthode splice() va prendre tois arguments :
+        // - une position de départ : à partir d'ou commence le changement
+        // - le nombre d'élément à remplacer ou à enlever
+        // - les éléments à ajouter au tableau
+        // ["Rose", "Red", "Yellow", "Green"]
+        couleur.splice(1, 0, "Marron", "Noir");
+        console.log(couleur); //['Rose', 'Marron', 'Noir', 'Red', 'Yellow', 'Green']
+        couleur.splice(2, 1, "Bleu");
+        console.log(couleur);['Rose', 'Marron', 'Bleu', 'Red', 'Yellow', 'Green']
+
+
+        // Pour découper un tableau et en créé un autre j'utilise la méthode slice()
+        // PREMIER ARGUMENTS : La position de départ : où doit commencer la découpe de notre tableau de départ
+        // si la position passée est un nombre négatif -> le début de la découpe sera calculé à partir de la fin du tableau de départ
+        // si aucune position de départ n'est passé la découpe commencera depuis le début du tableau de départ
+        // DEUXIEME ARGUMENTS: la position où doit s'arreter la découpe du tableau de départ
+        // si la position passée est un nombre négatif alors la fin de la découpe sera calculé à partir de la fin du tableau de départ
+        // si aucune position de fin n'est passée, alor on récuperera le tableau de départ jusqu'à la fin pour créer notre nouveau tableau
+        let jourSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+        let jourTravail10MensionsWeb = jourSemaine.slice(0, 5);
+        console.log(jourTravail10MensionsWeb); // ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi']
+        console.log(jourSemaine); // ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+
+        //Exercice
+        //joursTravailsColombbus
+
+        let joursTravailsColombbus = jourSemaine.slice(0, 5);
+        console.log(joursTravailsColombbus);
+        joursTravailsColombbus.splice(2, 1);
+        console.log(joursTravailsColombbus);
+
+        // Pour choisir le séparateur entre les éléments j'utilise la méthode join(): retourne une chaine de caractères créeren concatenant les différentes valeurs d'un tableau.
+        let concatCouleur = couleur.join(' - ');
+        // c'est impératif de stocké la chaine de caractère dans une autre variable
+        console.log(concatCouleur);
+        document.write('<br>' + concatCouleur);
+
+        // Pour déterminer si un tableau contient une valeur précise, j'utilise la méthode includes()
+        // je passe la valeur cherché en argument dans la méthode
+
+        let langage = ["HTML", "CSS", "JS"];
+        let verif = langage.includes("PHP"); // la syntaxe doit être identique
+        console.log(verif); // renvoie false car le caract php n'est pas présent dans la chaine de caract langage
+        console.log(typeof verif);
+
+        // Pour fusionner different tableau entre eux pour en créer un nouveau j'utilise la méthode concat()
+
+        let totalTableau = langage.concat(couleur, monTableau, array4Dimensions);
+        console.log(totalTableau);
+        document.write('<br>' + totalTableau);
 
     </script>
 </body>
