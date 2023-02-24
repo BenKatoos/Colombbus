@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi ">
+    <meta name="author" content="Choaib Landoulsi : Tableau javascript ">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Les Tableaux </title>
+</head>
+
+<body>
+    <script>
+        /////////////////*********************
+        //////////// LES TABLEAUX
+        /////////////////*********************
+
+        // Déclarer un tableau indéxé
+        let monTableau = [];
+        console.log(monTableau);
+
+        let myArray = new Array; //Deuxième façon pour déclarer un tableau
+        console.log(myArray);
+        // myArray et monTableau sont des tableaux qui peuvent contenir plusieurs informations
+
+        //Affecter des valeurs au tableau, plusieurs méthodes : 
+        // a-
+        let nosPrenoms = ["Sahar", "Choaib", "Grégory"];
+        console.log(nosPrenoms);
+        // b-
+        monTableau[0] = "Patrick";
+        monTableau[1] = "Sahar";
+        monTableau[2] = "Yacine";
+        monTableau[3] = "Bechir";
+        monTableau[4] = "Justine";
+        console.log(monTableau);
+
+        //Affiche l'index[3] de monTableau ("Bechir")
+        console.log(monTableau[3]);
+
+        // On va créer deux tableaux indéxé
+        let listeDePrenom = ["Mana", "Laurence", "Zaahid <br>"];
+        let listeDeNom = ["Heddar", "Wattier", "Ali"];
+        let annuaire = [listeDeNom, listeDePrenom];
+        console.log(annuaire);
+        document.write(annuaire);
+        // annuaire est un tableau indéxé multidimentionnel
+        // document.write(listeDeNom[0], ' ', listeDePrenom[0]);
+        document.write(annuaire[0][0], ' ', annuaire[1][0], '<br>');
+        document.write(annuaire[0][1], ' ', annuaire[1][1], '<br>');
+        document.write(annuaire[0][2], ' ', annuaire[1][2], '<br>');
+
+        //--------------------------
+        /////// Tableau non indéxés
+        //--------------------------
+
+        let coordonee = {
+            prenom: "Sahar",
+            nom: "Ferchichi",
+            age: 80,
+            tel: 789524136,
+        };
+        // afficher toutes les données
+        console.log(coordonee);
+        //afficher le prenom
+        console.log(coordonee['prenom']);
+        console.log(coordonee.nom);
+
+        //----------------------------------------------
+        /////// Tableau non indéxés multidimentionnel
+        //----------------------------------------------
+
+        let contact = [
+            { prenom: "Linda", nom: "Bentouil", tel: "89621324", },
+            { prenom: "Mariam", nom: "Cisse", tel: "89625464", },
+            { prenom: "Rayen", nom: "Daly", tel: "89621354", }
+        ];
+        console.log(contact[0].prenom, contact[0].nom);
+
+
+
+    </script>
+</body>
+
+</html>
