@@ -9,12 +9,14 @@
 /// créez des variables prénoms et age pour chacun
 /// Et les afficher dans la console
 
-let prenomJ = 'Jean';
+
+/*let prenomJ = 'Jean';
 let prenomX = 'Xavier';
 let ageJ = 58;
 let ageX = 32;
 console.log(prenomJ, ageJ);
 console.log(prenomX, ageX);
+*/
 
 
 //////-------------------
@@ -25,8 +27,8 @@ console.log(prenomX, ageX);
 /// Génerer une phrase à l'aide de 2 variable, qui sera : "Bonjour ......, tu as ...... ans"
 /// Afficher cette string dans le terminal avec console.log()
 
-console.log(`Bonjour, ${prenomJ} !!! Tu as ${ageJ} ans.`);
-console.log(typeof prenomJ);
+/*console.log(`Bonjour, ${prenomJ} !!! Tu as ${ageJ} ans.`);
+console.log(typeof prenomJ);*/
 
 
 //////-------------------
@@ -38,10 +40,107 @@ console.log(typeof prenomJ);
 // Afficher dans la page : Bonjour "prénom de l'utilisateur"
 // Demander à l'utilisateur de saisir 2 nombres entiers
 // Afficher le résultat de l'addition de ces chiffres.
-
+/*
 let prenom = prompt("Saisissez votre prénom");
 document.write("Bonjour,", prenom, ". <br>");
 let nbEntier = parseFloat(prompt("Saisissez un nombre entier"));
 let nbEntier2 = parseFloat(prompt("Saisissez à nouveau un nombre entier"));
-document.write("La somme de ces nombres est :", nbEntier + nbEntier2);
-console.log(typeof nbEntier2);
+document.write("La somme de ces nombres est :", nbEntier + nbEntier2, '<br>');
+console.log(typeof nbEntier2);*/
+
+//////-------------------
+/// Exercice 4
+//////-------------------
+
+// Demander à l'utilisateru son age
+// on utilise la condition IF  pour vérifier l'âge de l'utilisateur
+// -> s'il est majeur je lui souhaite la bienvenue.
+// => s'il est mineur je lui conseil de faire dodo
+
+/*
+// 1| Ask the age of the user client
+let ageee = parseFloat(prompt("Saisissez votre âge"));
+// 2|
+console.log(typeof (ageee));
+if (ageee >= 18) {
+    document.write("Bienvenue");
+}
+else if (ageee < 18) {
+    document.write("Va dormir");
+}
+else {
+    document.write("Saisie un nombre")
+}
+*/
+
+
+/*let votreAge = parseFloat(prompt("Veuillez entrer votre âge"));
+let ageLimite = 18;
+if (votreAge >= ageLimite && Number.isInteger(votreAge)) {
+    alert('Vous êtes la bienvenue');
+}
+else if (votreAge < ageLimite && Number.isInteger(votreAge)) {
+    alert('Va faire dodo');
+}
+else {
+    alert('Votre âge n\'est pas valide');
+}
+*/
+
+//////-------------------
+/// Exercice 5
+//////-------------------
+
+// J'arrive sur un espace sécurisé au moyen du prénom et de l'âge.
+// Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront préalablement stockée dans des variables age et prénoms)
+// en cas d'echec une alerte m'informe du problème
+// Si tout se passe bien un message de bienvenue m'accueille
+let value1, value2;
+let name = prompt("Saisissez votre prénom");
+name = name.toUpperCase();
+switch (name) {
+    case "MARY":
+        value1 = 1;
+        break
+    default:
+        value1 = 0;
+        break
+}
+let anos = parseFloat(prompt("Saisissez votre age"));
+switch (anos) {
+    case 22:
+        value2 = 1;
+        break
+    default:
+        value2 = 0;
+        break
+}
+if (value1 == 1 && value2 == 1) {
+    document.write("Bienvenue");
+}
+else {
+    alert("Information erroné");
+}
+
+//////-------------------
+/// Exercice 6
+//////-------------------
+
+// Utilisez la méthode slice : tranche pour renvoyer le mot "bananas"
+let txt = " I can eat bananas all day";
+
+// alerter le nombre d'éléments dans un tableau en utilisant la bonne méthode
+let cars = ["Volvo", "Jeep", "Mercedes"];
+
+// Utilisez slice () méthode pour supprimer "Orange" et "Apple" de fruits
+let fruits = ["Banane", "Orange", "Pomme", "Kiwi"];
+
+// Choisissez l'opérateur conditionnel ternaire correct pour alerter "trop jeune" si l'age est inférieur à 18 ans , sinon alerter "assez vieux"
+
+// On reçoit un nombre par exemple var number = 42; Comment savoir de combien d'unité (2) est composé ce nombre ? Avec l'opérateur moduolo !
+
+// Utilisez la méthode string correct pour remplacer le mot "hello" par le mort "Welcome"
+
+let txt2 = "Hello World";
+
+// Utilisez des caractères d'échappement pour alerter (we are "vikings")
