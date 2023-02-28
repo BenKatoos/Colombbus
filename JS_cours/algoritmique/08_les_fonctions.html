@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi ">
+    <meta name="author" content="Choaib Landoulsi : Fonctions javascript ">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Les Fonctions</title>
+</head>
+
+<body>
+    <script>
+        /////////////////////////////////////////////
+        ///// Fonction prédéfinies et utilisateurs
+        /////////////////////////////////////////////
+
+        document.write("<h2>Fonctions prédéfinies et utilisateurs</h2>")
+        // Le JS possède des fonctions. Ce sont des morceaux de condes encapsulés qu'on appel au besion pour executer une action précise. On distingue prédéfinies et les fonctions utilisateurs
+
+        document.write("<h3>Fonctions prédéfinies</h3>");
+        //// Fonction prédéfinies sur des nombres
+
+        let testNumber = 1.55555555555;
+        let number = testNumber.toFixed(2);
+        document.write(number); // toFixed() -> définie un nombre de chiffre derrière la virgule
+        //retourne une chaîne de caractère
+        document.write('<br>', typeof (number));
+        number = parseFloat(number);
+        document.write('<br>', typeof (number));
+
+        // let testMath = Math.pow(2, 3); // 2 au cube
+        // let testMath = Math.PI; //3.14
+        // let testMath = Math.floor(1.9); // 1 va chercher le nombre entier inférieur
+        // let testMath = Math.ceil(1.9); // 2 va chercher le nombre entier sup
+        // let testMath = Math.max(15, 85, 71, 23, 0, 5) // 85
+        // let testMath = Math.min(15, 85, 71, 23, 0, 5) // 0
+        let testMath = Math.random(); // retourne un nombre décimal entre 0 et 1 
+        document.write('<br>' + testMath + '<br>');
+
+        // Je veux un nombre entier entre 0 et 100 de façon aléatoire
+        let yes = Math.random() * 100;
+        document.write('<br>' + yes + '<br>')
+        document.write(Math.round(yes) + '<br>');
+
+        //// Fonction prédéfinies sur des chaînes de caractères
+
+        let phrase = '<br>Salut';
+        document.write(phrase.length + '<br>'); // retourne le nombre de caractères
+        document.write(phrase.indexOf("a")); //1 retourne la position
+        document.write(phrase.toLowerCase()); // renvoie en minuscule
+        document.write(phrase.toUpperCase()); // renvoie en majuscule
+
+        let phrase2 = '<br>           du texte           ';
+        document.write(phrase2.trim()); // enlève les espaces
+
+        let phrase3 = 'métro, boulot, dodo';
+        console.log(phrase3.split(',')); // retourne un tableau à partir d'une chaîne de caractères
+
+        document.write("<h3>Fonctions utilisateurs </h3>");
+
+        // Un des grands principe en programmation est d'avoir un code DRY (Don't Repeat Yourself)
+        // Les fonctions sont des blocks de codes réutilisableset modifiables, à volonté
+
+        // Déclaration d'une fonction: ou initialisation d'une fonction
+
+        function maFonction() {
+            document.write("<p>Ma première fonction</p>");
+        }
+        // Execution de la fonction
+        maFonction(); // en executant une fonction nous executons le code qui s'y trouve et déclencheons ses instructions
+
+        // Autre syntaxe pour déclarer une fonction
+        // Consiste à assigné unr fonction à une variable
+
+        let direBonjour = function () {
+            document.write('<p>Bonjour tout le monde</p>');
+        }
+        direBonjour();
+
+        // Fonction avec paramètre
+        // Afin que notre fonction soit paramétrable nous allons utiliser des paramètres
+
+        function direBonjour1(prenom) {
+            document.write(`<p>Bonjour ${prenom} </p>`);
+        }
+        direBonjour1('Sahar');
+
+        // vous pouvez mettre autant de paramètre que necessaire
+
+        // Fonction avec deux variables en paramètre
+
+        function direBonjour2(nom, age) {
+            document.write(`<p>Bonjour ${nom}, tu fais pas tes ${age} ans </p>`);
+        }
+        direBonjour2('AbdelRazek', 37);
+
+        function addition(number, number1) {
+            let result = number + number1;
+            document.write(`Résultat de l'addition de ${number} + ${number1} = ${result}`);
+        }
+        addition(5, 10);
+
+        // Protection des fonctions
+
+        function direSalut(prenomSalut = "") {
+            document.write(`<p>Salut ${prenomSalut}</p>`);
+        }
+        direSalut();
+
+        // création d'une fonction comme raccourci de document.write
+
+        function d(content, balise) {
+            if (balise === 1) {
+                document.write(`<h2>${content}</h2>`);
+            }
+            else {
+                document.write(`<p>${content}</p>`);
+            }
+        }
+        d("tilre", 1);
+        d("phrase");
+
+
+        // Fonctions ace return // retourne une valeur
+
+        function calculAge(anneeActuelle, anneeBorn) {
+            // Pour extraire le résultat et le stocker dans une variable nous utilisons un return
+            return anneeActuelle - anneeBorn
+            // tout ce qui se trouve après le return ne s'execute pas
+            // un return arrête complètement l'executions d'une fonction
+        }
+        let age = calculAge(2023, 2017);
+        d(age);
+
+        // Il existe une autre façon pour écrire nos fonctions
+
+        let maFonction2 = (x, y) => {
+            d(x + y);
+        }
+        maFonction2(5, 2);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -95,6 +95,7 @@ else {
 // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront préalablement stockée dans des variables age et prénoms)
 // en cas d'echec une alerte m'informe du problème
 // Si tout se passe bien un message de bienvenue m'accueille
+/*
 let value1, value2;
 let name = prompt("Saisissez votre prénom");
 name = name.toUpperCase();
@@ -116,7 +117,7 @@ switch (anos) {
         break
 }
 if (value1 == 1 && value2 == 1) {
-    document.write("Bienvenue");
+    document.write("Bienvenue <br>");
 }
 else {
     alert("Information erroné");
@@ -127,20 +128,66 @@ else {
 //////-------------------
 
 // Utilisez la méthode slice : tranche pour renvoyer le mot "bananas"
-let txt = " I can eat bananas all day";
+let txt = "I can eat bananas all day";
+let result = txt.slice(10, 17); // coupe jusqu'au 10ème caractère et reprend a partir du 17ème
+document.write(result);//renvoie bananas
 
 // alerter le nombre d'éléments dans un tableau en utilisant la bonne méthode
 let cars = ["Volvo", "Jeep", "Mercedes"];
+alert(cars.length);
 
-// Utilisez slice () méthode pour supprimer "Orange" et "Apple" de fruits
+
+// Utilisez splice () méthode pour supprimer "Orange" et "Apple" de fruits
 let fruits = ["Banane", "Orange", "Pomme", "Kiwi"];
+fruits.splice(1, 2);
+console.log(fruits);
 
 // Choisissez l'opérateur conditionnel ternaire correct pour alerter "trop jeune" si l'age est inférieur à 18 ans , sinon alerter "assez vieux"
+let mineur = prompt("Saisissez votre âge");
+let majeur = (mineur < 18) ? alert("Trop jeune") : alert("assez vieux");
 
 // On reçoit un nombre par exemple var number = 42; Comment savoir de combien d'unité (2) est composé ce nombre ? Avec l'opérateur moduolo !
+// 68 => renvoie 8
+let number = parseFloat(prompt("Saisissez un nombre"));
+let unite = number % 10;
+console.log(unite);
+let dizaines = (number - unite) / 10;
+console.log(dizaines);
 
 // Utilisez la méthode string correct pour remplacer le mot "hello" par le mort "Welcome"
 
 let txt2 = "Hello World";
+txt2 = txt2.replace("Hello", "Welcome");
+console.log(txt2);
 
 // Utilisez des caractères d'échappement pour alerter (we are "vikings")
+alert("We are \"Vikings\" !!!");
+*/
+
+//////-------------------
+/// Exercice 7
+//////-------------------
+
+/*
+    J'ai 1000€ sur mon compte chaque mois j'ajoute 50€ Combien de temps me faut il pour atteindre 2000€ ?
+*/
+
+
+// Avec la boucle while
+
+let soldeCompte = 1000;
+let nbrMois = 0;
+while (soldeCompte < 2000) {
+    soldeCompte += 50;
+    nbrMois++
+    document.write("<p>Ce mois, j'ai sur mon compte : </p>" + soldeCompte);
+}
+document.write("<p> Pour atteindre la somme de 2000€, il me faut : " + nbrMois + " mois</p>");
+
+// Avec la boucle for
+let mois = -1;
+for (let solde = 1000; solde <= 2000; solde += 50) {
+    document.write("<p>Ce mois, j'ai sur mon compte : " + solde + "</p>");
+    mois++
+}
+document.write("<p> Pour atteindre la somme de 2000€, il me faut : " + mois + " mois</p>");

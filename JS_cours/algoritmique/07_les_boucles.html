@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi ">
+    <meta name="author" content="Choaib Landoulsi : Boucles javascript ">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Les Boucles</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1> Les boucles</h1>")
+        // Les boucles nous permettent d'executer une ou plusieurs instructions un certains nombre de fois
+        // Une boucles respecte une condition
+        // Tant que cette condition est respecrée, nous allons effectuer des instructions en boucle.
+        // la pluplart du temps, nous utilisons les boucles pour passer sur chaques éléments d'un array
+        // Il y a différents types de boucles les plus utilisées sont la boucle "for" et la boucle "while"
+
+
+        ////////////////////
+        ///// BOUCLE FOR
+        ////////////////////
+        document.write(`<h2> La boucle 'for'</h2>`)
+
+        /*
+            Syntaxe
+            for(3arguments : initialisation ; condition de continuation ; incrémentation){
+                // code à exécuter
+            }
+        */
+        // always use backquotes
+        for (let i = 0; i <= 10; i++) {
+            document.write(`<p>instruction executée ${i}</p>`);
+        }
+        document.write("<hr>");
+        // i=0 j'initialise le départ de la boucle à 0
+        // i <= tant que la valeur de i est inférieur ou égale à 10
+        // i++ j'incrémente un tour de boucle
+        for (let i = 0; i <= 10; i += 2) {
+            document.write(`<p>Je compte deux par deux ${i}</p>`);
+        }
+        let users = ["Sahar", "Zaahid", "Bakary", "Ludovic"];
+
+        for (let i = 0; i <= users.length; i++) {
+            document.write(users[i]);
+        }
+
+        ////////////////////////
+        //////// BOUCLE WHILE
+        ////////////////////////
+
+        document.write(`<h2>La boucle while</h2>`);
+
+        /*
+            La Syntaxe
+
+            while(expression qui vaut true ou false){
+                // tant que l'expression vaut true , code à exectuer
+            }
+        */
+        document.write('<hr>');
+        let i = 0;
+        while (i <= 5) {
+            document.write(i + '/');
+            // attention à ne pas oublier l'incrémentation
+            i++; // à chaque tout de boucle j'incrémente la variable
+        }
+
+    </script>
+</body>
+
+</html>
