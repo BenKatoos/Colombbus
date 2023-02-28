@@ -132,7 +132,7 @@
             // tout ce qui se trouve après le return ne s'execute pas
             // un return arrête complètement l'executions d'une fonction
         }
-        let age = calculAge(2023, 2017);
+        let age = calculAge(2023, 1918);
         d(age);
 
         // Il existe une autre façon pour écrire nos fonctions
@@ -141,6 +141,12 @@
             d(x + y);
         }
         maFonction2(5, 2);
+        // La fonction fléchée : les accolades ne sont pas nécessaire si une seule instruction
+
+        let maFonction3 = (f, r) => f * r;
+
+        let resultat = maFonction3(5, 6);
+        d(resultat);
 
 
 
