@@ -51,7 +51,7 @@ le document :  on retrouve les elements qui composent mon document
 console.log(document);
 
 /*
-    Afin de modifier notre page HTML selon les intéractions d'un utilisateur nous allons modifier notre DOM grâce javascript.
+    Afin de modifier notre page HTML selon les intéractions d'un utilisateur nous allons modifier notre DOM grâce à javascript.
 
     SELECTIONNER NOS ELEMENTS
  */
@@ -110,15 +110,4 @@ console.log(document);
 \*--------------------------------------------*/
 
        // -> Me renvoie un tableau JS avec mes éléments HTML (Collection HTML)
-
-
-
-
-
-
-
-
-
-
-
 
