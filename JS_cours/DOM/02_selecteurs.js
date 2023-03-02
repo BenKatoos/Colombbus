@@ -12,3 +12,16 @@ console.log(select1);
 
 let select2 = document.getElementById('titreNiveau1');
 console.log(select2);
+
+
+
+
+
+
+
+
+
+
+
+
+
