@@ -9,6 +9,14 @@
     <meta name="author" content="Choaib Landoulsi : Fonctions javascript ">
     <link rel="stylesheet" type="text/css" href="">
     <title>Les Fonctions</title>
+
+    <style>
+        body {
+            background-image: url(cachedImage.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 
 <body>
@@ -120,7 +128,7 @@
                 document.write(`<p>${content}</p>`);
             }
         }
-        d("tilre", 1);
+        d("titre", 1);
         d("phrase");
 
 
@@ -149,11 +157,43 @@
         d(resultat);
 
 
+        document.write('<h3>La portée des variables</h3>');
+        // En js, il existe deux espaces de portées différentes : l'espace global et l'espace local.
+        // -> l'espace global désigne l'entièreté d'un script, à l'exception de l'interieur des fonctions
+        // -> l'espace local désigne, à l'inverse, l'espace dans une fonction
 
+        //// ⚠️ATTENTION⚠️ évitons de déclarer plusieurs variables dans différents espaces en utilisant le même nom
 
+        // Deux variables globales
 
+        let x = 5;
+        let y = 10;
 
+        function porte1() {
+            document.write(`Depuis porte1, la valeur de x est ${x} et la valeur de y ${y}. <br>`)
+        }
+        porte1();
 
+        function porte2() {
+            // Ici nos variables portent le même nom que les variables globales déclarer précedement
+            // Bien qu'elles portent le même nom dû à leur portée différentes ce sont 4 enditées distinctes. x(ligne 161) différentes du x ligne (172) kif kif pour y
+            let x = 20;
+            let y = 40;
+            document.write(`Depuis porte2, la valeur de x est ${x} et la valeur de y ${y}.`)
+        }
+        porte2();
+        document.write(`<br> Lorsque je me trouve en dehors d'une fonction, dans l'espace global, x contient la valeur ${x} et la valeur de y ${y}.`)
+
+        function porte3() {
+            let a = 1;
+            let b = 2;
+
+            document.write(`Depuis porte3, la valer de a est ${a} et la valeur de b est ${b}`);
+        }
+        porte3();
+
+        //document.write(`Depuis porte3, la valer de a est ${a} et la valeur de b est ${b}`);
+        // test : on a une erreur lorqu'on execute le code ci-dessous : a ayant une porté local, la variable n'est pas reconnu et le navigateur nous prévient que cette variable n'a pas été définie
 
 
     </script>

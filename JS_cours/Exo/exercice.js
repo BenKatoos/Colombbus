@@ -174,7 +174,7 @@ alert("We are \"Vikings\" !!!");
 
 
 // Avec la boucle while
-
+/*
 let soldeCompte = 1000;
 let nbrMois = 0;
 while (soldeCompte < 2000) {
@@ -191,3 +191,37 @@ for (let solde = 1000; solde <= 2000; solde += 50) {
     mois++
 }
 document.write("<p> Pour atteindre la somme de 2000€, il me faut : " + mois + " mois</p>");
+*/
+
+
+//Exercice
+// Réaliser une fonction permettant à un internaute de :
+// - Saisir son Prénom dans un Prompt
+// - Retourner à l'Utilisateur : Bonjour [PRENOM], Quel age as-tu ?
+// - Saisir son Age
+// - Afficher ensuite un récapitulatif dans la page.
+// Bonjour [PRENOM], tu as [AGE] !
+// En cas d'échec une alert m'informera le problème.
+
+function hello() {
+    let prenom = prompt("Quel est votre prénom ?");
+    if (prenom !== ' ' && isNaN(prenom)) {
+        let age = parseFloat(prompt(`Bonjour ${prenom}, Quel age as-tu ?`));
+        if (age !== null && !isNaN(age)) {
+            document.write(`Tu t'appele ${prenom}, tu as ${age} ans !!`);
+        }
+        else {
+            alert("Vous n'avez pas inscrit un nombre")
+        }
+    }
+    else {
+        alert("Vous n'avez pas inscrit votre prénom.")
+    }
+
+}
+hello();
+
+
+
+
+
