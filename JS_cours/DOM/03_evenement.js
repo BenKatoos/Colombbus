@@ -61,3 +61,13 @@ divOrange.addEventListener('dblclick', function () {
     divOrange.style.borderRadius = "50%";
     divOrange.innerHTML = "#gold";
 })
+
+// 4 div #info
+// avec une fonction anonyme // mouseover
+
+let divInfo = document.querySelector('#info');
+divInfo.addEventListener('mouseover', function () {
+    divInfo.style.backgroundColor = "gold";
+    divInfo.style.borderRadius = "50%";
+    divInfo.innerHTML = "#gold";
+})

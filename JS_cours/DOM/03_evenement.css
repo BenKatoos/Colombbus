@@ -18,3 +18,13 @@
     margin: auto;
     text-align: center;
 }
+#info{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(77, 181, 205);
+    line-height: 150px;
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
