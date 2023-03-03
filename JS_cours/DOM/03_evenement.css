@@ -1,0 +1,20 @@
+#rouge{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(206,0,0);
+    line-height: 150px;
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+#orange{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 145, 0);
+    line-height: 150px;
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}

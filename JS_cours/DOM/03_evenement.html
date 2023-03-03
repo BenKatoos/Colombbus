@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choaib Landoulsi ">
+    <meta name="author" content="Choaib Landoulsi : Les Évènements">
+    <link rel="stylesheet" type="text/css" href="03_evenement.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Les Évènements</title>
+</head>
+
+<body>
+    <header>
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold" id="titreNiveau1"> Cours JavaScript</h1>
+                <p class="col-md-8 fs-4">Les évènements</p>
+            </div>
+        </div>
+    </header>
+    <main class="container mb-5">
+        <section class="row border border-danger p-4 rounded">
+            <div class="col-8">
+                <h2 class="text-danger">
+                    addEventListener(), exemple
+                </h2>
+                <p>
+                    Un simple clic sur la div #rouge
+                </p>
+                <p class="rounded-pill text-white bg-danger" id="p1" onclick="fp1()">
+                    Cliquez sur ce paragraphe
+                    <!-- l'attribut onclick est purement Javascript : gestionnaire d'évènement dans la balise ps -->
+                </p>
+            </div>
+            <div class="col-4">
+                <div id="rouge">
+                    #rouge
+                </div>
+            </div>
+        </section>
+        <section class="row border border-warning p-4 rounded my-4">
+            <div class="col-8">
+                <h2 class="text-warning">
+                    Autre Exemple avec dblclock
+                </h2>
+                <p>
+                    Un double clic sur la div #orange
+                </p>
+            </div>
+            <div class="col-4">
+                <div id="orange">
+                    #orange
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="03_evenement.js"></script>
+</body>
+
+</html>
