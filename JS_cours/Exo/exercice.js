@@ -203,6 +203,7 @@ document.write("<p> Pour atteindre la somme de 2000€, il me faut : " + mois + 
 // Bonjour [PRENOM], tu as [AGE] !
 // En cas d'échec une alert m'informera le problème.
 
+/*
 function hello() {
     let prenom = prompt("Quel est votre prénom ?");
     if (prenom !== ' ' && isNaN(prenom)) {
@@ -220,6 +221,239 @@ function hello() {
 
 }
 hello();
+
+*/
+
+//----------------------------------😊-----------------------------------//
+//--------------------------------
+// //Exercice  10:
+//--------------------------------
+
+
+/*
+ Ecrivez un programme qui fait saisir un nom de jour de la semaine à l'utilisateur, puis affiche le nom du jour suivant.
+ Les erreurs de saisie (jour incorrect) doivent être gérées.
+ Effectuez l'exercice avec des if/if else puis avec un switch.
+ */
+/*
+    let jourUtilisateur = prompt("Saisissez un jour de la semaine");
+    jourUtilisateur = jourUtilisateur.toUpperCase();
+    console.log(jourUtilisateur);
+
+    switch (jourUtilisateur){
+        case "LUNDI":
+            document.write("Mardi");
+            break;
+        case "MARDI":
+            document.write("Mercredi");
+            break;
+        case "MERCREDI":
+            document.write("Jeudi");
+            break;
+        case "JEUDI":
+            document.write("Vendredi");
+            break;
+        case "VENDREDI":
+            document.write("Samedi");
+            break;
+        case "SAMEDI":
+            document.write("Dimanche");
+            break;
+        case "DIMANCHE":
+            document.write("Lundi");
+            break;
+        default:
+            alert("Saisie incorectes")
+        }
+*/
+
+/*
+        if (jourUtilisateur == "LUNDI"){
+            document.write("Mardi");
+        }
+        else if (jourUtilisateur=="MARDI"){
+            document.write("Mercredi");
+        }
+        else if (jourUtilisateur=="MERCREDI"){
+            document.write("Jeudi");
+        }
+        else if (jourUtilisateur=="JEUDI"){
+            document.write("Vendredi");
+        }
+        else if (jourUtilisateur=="VENDREDI"){
+            document.write("Samedi");
+        }
+        else if (jourUtilisateur=="SAMEDI"){
+            document.write("Dimanche");
+        }
+        else if (jourUtilisateur=="DIMANCHE"){
+            document.write("Lundi");
+        }
+        else{
+            alert("Erreur d'orthographe. Saisissez à nouveau votre jour souhaité");
+        }
+        */
+
+//--------------------------------
+// //Exercice  11:
+//--------------------------------
+
+/*
+Ecriver un programme JS qui permet à l'utilisateur d'insérer le numéro du mois et le programme lui réponds le nombre de jours
+ex :
+     mois février => 28 jours (on considére que c'est 28 toujpous ;-) )
+     mois juin => 30 jours
+     mois octobre = > 31jours
+*/
+/*
+let jourMois= prompt("Saisissez le numéro du mois");
+if (jourMois == "1"){
+    document.write("mois de janvier => 31 jours");
+}
+else if (jourMois=="2"){
+    document.write("mois de février => 28 jours");
+}
+else if (jourMois=="3"){
+    document.write("mois de mars => 31 jours");
+}
+else if (jourMois=="4"){
+    document.write("mois de avril => 30 jours");
+}
+else if (jourMois=="5"){
+    document.write("mois de mai => 31 jours");
+}
+else if (jourMois=="6"){
+    document.write("mois de juin => 30 jours");
+}
+else if (jourMois=="7"){
+    document.write("mois de juillet => 31 jours");
+}
+else if (jourMois=="8"){
+    document.write("mois de âout => 31 jours");
+}
+else if (jourMois=="9"){
+    document.write("mois de septembre => 30 jours");
+}
+else if (jourMois=="10"){
+    document.write("mois de octobre => 31 jours");
+}
+else if (jourMois=="11"){
+    document.write("mois de novembre => 30 jours");
+}
+else if (jourMois=="12"){
+    document.write("mois de décembre => 31 jours");
+}
+else{
+    alert("Aucun mois n'est associé à ce numéro");
+}
+*/
+//--------------------------------
+// //Exercice  12:
+//--------------------------------
+
+/*
+A partir du tableau fourni, vous devez mettre en place un système d'authentification.
+Après avoir demandé à votre utilisateur son EMAIL et MOT DE PASSE, et après avoir vérifié ses informations, vous lui souhaiterez la bienvenue avec son nom et son prénom (document.write);
+En cas d'échec, vous afficherez une ALERT pour l'informer de l'erreur.
+ar BaseDeDonnees = [
+            {"prenom": "Tom","nom": "Lechat","email": "tom.lechat@gmail.com", "mdp": "poisson!"},
+            {"prenom": "Jerry","nom": "Lasouris","email": "jerry.lasouris@gmail.com","mdp": "fromage!"},
+            {"prenom": "twity","nom": "Lecanard","email": "twity.lecanard@gmail.com","mdp": "mignon!"}
+        ];
+*/
+/*
+let BaseDeDonnees = [
+    { prenom: "Tom", nom: "Lechat", email: "tom.lechat@gmail.com", mdp: "poisson!" },
+    { prenom: "Jerry", nom: "Lasouris", email: "jerry.lasouris@gmail.com", mdp: "fromage!" },
+    { prenom: "twity", nom: "Lecanard", email: "twity.lecanard@gmail.com", mdp: "mignon!" }
+];
+let email = prompt("Saisissez votre adresse mail");
+email = email;
+let mdp = prompt("Saisissez votre mots de passe")
+mdp = mdp;
+
+if (email == BaseDeDonnees[0].email && mdp == BaseDeDonnees[0].mdp) {
+    document.write("Bienvenue ", BaseDeDonnees[0].nom, " ", BaseDeDonnees[0].prenom);
+}
+else if (email == BaseDeDonnees[1].email && mdp == BaseDeDonnees[1].mdp) {
+    document.write("Bienvenue ", BaseDeDonnees[1].nom, " ", BaseDeDonnees[1].prenom);
+}
+else if (email == BaseDeDonnees[2].email && mdp == BaseDeDonnees[2].mdp) {
+    document.write("Bienvenue ", BaseDeDonnees[2].nom, " ", BaseDeDonnees[2].prenom);
+}
+else {
+    document.write("Vos identifiants sont incorrectes !!");
+}
+*/
+//--------------------------------
+// //Exercice  13:
+
+//--------------------------------
+
+/*
+    Ecrivez un programme  qui permet à l'utilisateur de deviner un nombre entier compris entre 0 et 100 générer automatiquement et aléatoirement en JS
+    l'utilisateur a droit 6 essais
+     - en cas de réussite -> message affiche sur la page: Vous avez gagné, bravo ! La réponse était bien " le nombre"
+     - le nombre deviné est inférieur à à celui qui est généré  -> Visez plus haut !
+     - le nombre deviné est supérieur à celui qui est généré -> visez plus bas !
+     - n'oubliez pas de traiter les essais avec des erreurs (ex : l'utilisateur a choisit un nombre supérieur à 100 !!!)
+*/
+/*
+
+let nbrAleatoire = Math.random() * 100;
+nbrAleatoire = Math.round(nbrAleatoire);
+console.log(nbrAleatoire);
+
+for (let i = 0; i <= 6; i++) {
+    nbrUsers = prompt("Devenez le nombre");
+    if (nbrAleatoire == nbrUsers) {
+        alert("Vous avez gagné, bravo! La réponse était bien" + ' ' + nbrUsers);
+    }
+    else if (nbrAleatoire > nbrUsers) {
+        alert("Visez plus haut !");
+    }
+    else if (nbrUsers > nbrAleatoire) {
+        alert("Visez plus bas !");
+    }
+    else {
+        alert("Vous avez saisie un nombre supérieur à 100.");
+    }
+}
+*/
+
+
+//--------------------------------
+// //Exercice  14:
+
+//--------------------------------
+
+/*
+   // Via Javascript :
+   // Écrivez le contenu de tous les éléments HTML de la page exercice.html et renseignez leurs attributs ;
+   //Remplacer la --> avec votre réponse
+
+   // Première Section
+           -->
+
+   // Seconde Section
+           -->
+
+   // Donnez à l'image une largeur de 600px ;
+           -->
+
+   // Donnez aux sections : un padding et une couleur de fond ;
+           -->
+
+   // Créez une troisième section qui aura une classe et qui comprend : un titre 2, un paragraphe et un boutton ;
+           -->
+
+   // Ajoutez les flexbox à cette section : le contenu doit être centré verticalement et horizontalement.
+           -->
+
+  */
+
+
+
 
 
 
