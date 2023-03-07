@@ -346,7 +346,7 @@ else if (jourMois=="12"){
 else{
     alert("Aucun mois n'est associé à ce numéro");
 }
-*/
+
 //--------------------------------
 // //Exercice  12:
 //--------------------------------
@@ -361,16 +361,14 @@ ar BaseDeDonnees = [
             {"prenom": "twity","nom": "Lecanard","email": "twity.lecanard@gmail.com","mdp": "mignon!"}
         ];
 */
-/*
+
 let BaseDeDonnees = [
     { prenom: "Tom", nom: "Lechat", email: "tom.lechat@gmail.com", mdp: "poisson!" },
     { prenom: "Jerry", nom: "Lasouris", email: "jerry.lasouris@gmail.com", mdp: "fromage!" },
     { prenom: "twity", nom: "Lecanard", email: "twity.lecanard@gmail.com", mdp: "mignon!" }
 ];
 let email = prompt("Saisissez votre adresse mail");
-email = email;
-let mdp = prompt("Saisissez votre mots de passe")
-mdp = mdp;
+let mdp = prompt("Saisissez votre mots de passe");
 
 if (email == BaseDeDonnees[0].email && mdp == BaseDeDonnees[0].mdp) {
     document.write("Bienvenue ", BaseDeDonnees[0].nom, " ", BaseDeDonnees[0].prenom);
@@ -384,7 +382,10 @@ else if (email == BaseDeDonnees[2].email && mdp == BaseDeDonnees[2].mdp) {
 else {
     document.write("Vos identifiants sont incorrectes !!");
 }
-*/
+console.log(BaseDeDonnees.length);
+
+
+
 //--------------------------------
 // //Exercice  13:
 
