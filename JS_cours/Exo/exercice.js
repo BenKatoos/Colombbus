@@ -262,7 +262,8 @@ hello();
             document.write("Lundi");
             break;
         default:
-            alert("Saisie incorectes")
+            alert("Saisie incorectes");
+            break;
         }
 */
 
