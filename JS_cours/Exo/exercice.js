@@ -236,8 +236,7 @@ hello();
  Effectuez l'exercice avec des if/if else puis avec un switch.
  */
 /*
-    let jourUtilisateur = prompt("Saisissez un jour de la semaine");
-    jourUtilisateur = jourUtilisateur.toUpperCase();
+    let jourUtilisateur = prompt("Saisissez un jour de la semaine").toUpperCase();
     console.log(jourUtilisateur);
 
     switch (jourUtilisateur){
