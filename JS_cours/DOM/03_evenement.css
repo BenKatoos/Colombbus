@@ -28,3 +28,30 @@
     margin: auto;
     text-align: center;
 }
+#primary{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 125, 202);
+    line-height: 150px;
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+#success{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+.vert{
+    background-color: rgb(25,135,84);
+}
+.gold{
+    background-color: gold;
+    border-radius: 50%;
+}

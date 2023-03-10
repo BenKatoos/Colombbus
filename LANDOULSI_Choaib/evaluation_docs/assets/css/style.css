@@ -1,0 +1,355 @@
+body{
+    background-color: #1C1C1C;
+    color: #212121;
+}
+
+/*Style en-tête*/
+
+header{
+    font-family: 'Arimo', Arial;
+    background-image: url(../images/background.jpg);
+}
+/* Partie 1 */
+header .gauche h1 span{
+    color: #EA9F06;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Partie 2 */
+
+.droite ul li a{
+    color: #212121;
+}
+
+/*Style du corps*/
+
+
+main{
+    background-image: url(../images/background.jpg);
+}
+
+
+
+/* .gNoir{
+    background-image: url(../images/gant-boxe-2.png);
+}
+.gRouge{
+    background-image: url(../images/gant-boxe-1.png);
+} */
+
+.gNoir p{
+    font-family: 'Arimo', Arial;
+}
+
+
+.description p:first-child{
+    font-family: 'Arimo', Arial;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 2rem;
+    height: 2rem;
+    width: 100px;
+    color: white;
+    background: linear-gradient(#363636, #9A9A9A);
+}
+.description p:nth-child(2){
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+}
+.description span{
+    color: #EA9F06;
+}
+
+
+
+
+@media screen and (min-width:992px){
+    
+    /*Style en-tête*/
+    header{
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .gauche{
+        padding-left: 145px;
+    }
+    .droite{
+        padding-right: 145px;
+    }
+    .droite h2{
+        margin-bottom: 3.5rem;
+        float: right;
+    }
+    .droite ul{
+        clear: both;
+    }
+    .droite li:nth-child(2){
+        margin: 0 2rem;
+    }
+
+    /*Style corps*/
+    .container{
+        width: 60%;
+        margin: auto;
+        padding-top: 20px;
+    } 
+    .container img{
+        width: 100%;
+    }
+    
+    .produit1, .produit2, .produit3, .produit4{
+        width: 50%;
+        font-family: 'Arimo', arial;
+        font-weight: bolder;
+        padding: 2rem 4rem;
+    }
+    .produit4{
+        margin-bottom: 6rem;
+    }
+    .gNoir, .gRouge{
+        position: relative;
+        width: 100%;
+    }
+    .gNoir img, .gRouge img{
+        width: 15rem;
+    }
+    .gNoir .reduction, .gRouge .reduction{
+        height: 1.7rem;
+        width: 3.5rem;
+        line-height: 1.7rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bolder;
+        color: #EA9F06;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #292929;
+        border: 1px solid #292929;
+        border-radius: 10px;
+        position: absolute;
+        top: 12px;
+        right: -20px;
+    }
+    .descriptif{
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: #212121;
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+    }
+    .description{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .description p:nth-child(2), .description p:last-child{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer{
+        background-color: #373737;
+        color: #212121;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .divers{
+        background-color: #fff;
+        height: 2rem;
+        line-height: 2rem;
+        width: 20rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        position: absolute;
+        top: -10px;
+    }
+    .divers ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: disc;
+        color: grey;
+    }
+    .divers ul li{
+        font-size: 0.5rem;
+        font-family: 'Arimo',arial;
+        font-weight: bold;
+    }
+    .divers ul li a{
+        text-decoration: none;
+        color: #212121;
+    }
+    .pointFort{
+        margin: 2.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #fff;
+        border-bottom: solid grey 2px;
+    }
+    .pointFort div{
+        margin: 0 1rem;
+    }
+    .pointFort p:last-child{
+        margin-bottom: 2rem;
+    }
+    .socialMedia img{
+        margin: 0 2rem;
+    }
+    footer>p{
+        margin: 4rem;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:576.99px){
+    /*Style en-tête*/
+
+    header{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    header h1{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .gauche img{
+        padding-left: 80px;
+        margin-bottom: 1rem;
+    }
+    .droite h2{
+        margin: 2rem 0;
+    }
+    .droite li:nth-child(2){
+        margin: 0 2rem;
+    }
+
+    /*style corps*/
+
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .container img {
+        width: 100%;
+    }
+    .produit1, .produit2, .produit3, .produit4{
+        
+        width: 100%;
+        font-family: 'Arimo', arial;
+        font-weight: bolder;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .produit4{
+        margin-bottom: 6rem;
+    }
+    .gNoir, .gRouge{
+        position: relative;
+        width: 100%;
+    }
+    .gNoir img, .gRouge img{
+        width: 20rem;
+    }
+    .gNoir .reduction, .gRouge .reduction{
+        height: 1.7rem;
+        width: 3.5rem;
+        line-height: 1.7rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bolder;
+        color: #EA9F06;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #292929;
+        border: 1px solid #292929;
+        border-radius: 10px;
+        position: absolute;
+        top: 12px;
+        right: 95px;
+    }
+    .descriptif{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #212121;
+        position: absolute;
+        bottom: 10px;
+        left: 120px;
+    }
+    .description{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 4.5rem;
+    }
+    .description p:nth-child(2), .description p:last-child{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer{
+        background-color: #373737;
+        color: #212121;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+    .divers{
+        background-color: #fff;
+        height: 2rem;
+        line-height: 2rem;
+        width: 20rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        position: absolute;
+        top: -10px;
+    }
+    .divers ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: disc;
+        color: grey;
+    }
+    .divers ul li{
+        font-size: 0.5rem;
+        font-family: 'Arimo',arial;
+        font-weight: bold;
+    }
+    .divers ul li a{
+        text-decoration: none;
+        color: #212121;
+    }
+
+
+    .pointFort{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem;
+        border-bottom: solid grey 2px;
+    }
+    .pointFort img{
+        margin-bottom: 0.5rem;
+    }
+    .pointFort div{
+        margin: 1rem 0;
+        width: 50%;
+        text-align: center;
+        color: #fff;
+        font-size: 0.5rem;
+    }
+
+    .socialMedia img{
+        margin: 0 2rem;
+    }
+
+    footer>p{
+        margin: 4rem;
+        color: #fff;
+    }
+}

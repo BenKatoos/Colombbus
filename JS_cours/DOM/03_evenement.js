@@ -71,3 +71,26 @@ divInfo.addEventListener('mouseover', function () {
     divInfo.style.borderRadius = "50%";
     divInfo.innerHTML = "#gold";
 })
+
+let divBleu = document.querySelector('#primary');
+divBleu.addEventListener('mouseout', function () {
+    divBleu.style.backgroundColor = "gold";
+    divBleu.style.borderRadius = "50%";
+    divBleu.innerHTML = "#gold";
+})
+
+let divChangeColor = document.getElementById("success");
+
+divChangeColor.addEventListener('click', function(){
+
+    if(divChangeColor.classList.contains('vert')){
+        divChangeColor.classList.remove('vert');
+        divChangeColor.classList.add('gold');
+        divChangeColor.innerHTML='GOLD';
+    }
+    else{
+        divChangeColor.classList.remove('gold');
+        divChangeColor.classList.add('vert');
+        divChangeColor.innerHTML = 'VERT';
+    }
+})

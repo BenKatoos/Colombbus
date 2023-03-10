@@ -181,7 +181,7 @@ for(let i = 0; i < BaseDeDonnees.length; i++){
      - le nombre deviné est supérieur à celui qui est généré -> visez plus bas !
      - n'oubliez pas de traiter les essais avec des erreurs (ex : l'utilisateur a choisit un nombre supérieur à 100 !!!)
 */
-
+/*
 let nombreArrondi = parseInt(Math.random()*100);
           console.log(nombreArrondi);
 
@@ -203,4 +203,134 @@ let nombreArrondi = parseInt(Math.random()*100);
                     alert("Dommage, vous n\'avez pas trouvé la bonne réponse, c\'était" + nombreArrondi+ '.' );
                }  
           }
-     }
+    }
+*/
+
+//--------------------------------
+// //Exercice  14:
+
+//--------------------------------
+
+/*
+   // Via Javascript :
+   // Écrivez le contenu de tous les éléments HTML de la page exercice.html et renseignez leurs attributs ;
+   //Remplacer la --> avec votre réponse
+
+   // Première Section
+           -->
+
+   // Seconde Section
+           -->
+
+   // Donnez à l'image une largeur de 600px ;
+           -->
+
+   // Donnez aux sections : un padding et une couleur de fond ;
+           -->
+
+   // Créez une troisième section qui aura une classe et qui comprend : un titre 2, un paragraphe et un boutton ;
+           -->
+
+   // Ajoutez les flexbox à cette section : le contenu doit être centré verticalement et horizontalement.
+           -->
+
+  */
+ // Première Section   
+              // ---------- le h1 
+              let section1H1 = document.querySelector('#first-section > h1');
+              // section1.innerHTML = "Titre de niveau 1";
+              // section1.innerText= "Titre de niveau 1";
+              section1H1.textContent = "Titre de niveau 1";
+  
+  
+              // document.getElementById('p').innerText = "Paragraphe de la secton 1";
+              // let section1Paragraphe = document.querySelectorAll('p');
+  
+              // section1Paragraphe[4].innerText ="Paragraphe de la secton 1";
+  
+              let section1Paragraphe = document.querySelector('#first-section  p');
+              section1Paragraphe.innerText ="Paragraphe de la secton 1";
+  
+              //-------------- img et src
+  
+                  let image = document.querySelector('#first-section > img');
+                  // console.log(image);
+                  // image.src = "assets/img/logo.png";
+                  // console.log(image);
+                  image.setAttribute("src","assets/img/logo.png");
+                  console.log(image);
+              //---------- img et alt
+                  image.alt = "image du logo";
+                  image.setAttribute("alt","image du logo");
+  
+              //----------- bouton
+              let btn = document.querySelector('button');
+              btn.innerText= "Envoyer";
+  
+        
+          //--------  second-section 
+  
+          let titre2 = document.querySelector('#second-section h2');
+          titre2.innerText =" Titre de niveau 2"
+  
+          let section2Paragraphe = document.querySelectorAll('#second-section p ');
+          console.log(section2Paragraphe);
+          section2Paragraphe[0].innerText= "paragraphe 1 dans la section 2";
+  
+          section2Paragraphe[1].innerText= "paragraphe 2 dans la section 2";
+  
+          let lien = document.querySelector('a');
+          lien.innerText= "lien vers google";
+          lien.href = "https://www.google.fr/";
+          lien.setAttribute("target", "_blank");
+  
+             
+  
+          // Donnez à l'image une largeur de 600px ;
+               
+          image.style.width = "600px"
+          // Donnez aux sections : un padding et une couleur de fond ;
+          section1= document.getElementById('first-section');
+          section1.style.padding = "100px";
+          section1.style.backgroundColor = "red"
+               
+  
+          // Créez une troisième section qui aura une classe et qui comprend : un titre 2, un paragraphe et un boutton ;
+  
+              //-> j'ai créé les éléments
+              let section3 = document.createElement('section');  
+              let section3H2 = document.createElement('h2');
+              let section3P = document.createElement('p');
+              let section3Button = document.createElement('button');
+  
+              //-> j'écris le contenu
+              section3H2.innerText = "Titre de niveau 2 dans la section 3";
+              section3P.innerText = "Pragraphe dans la section3";
+              section3Button.innerText = "Bouton";
+  
+              //-> j'injecte mes élément dans la section 3
+  
+              section3.appendChild(section3H2);
+              section3.appendChild(section3P);
+              section3.appendChild(section3Button);
+  
+              //-> j'injcet la section dans le main
+              let main = document.querySelector('main');
+              console.log(main);
+              main.appendChild(section3);
+  
+  
+  
+          // Ajoutez les flexbox à cette section : le contenu doit être centré verticalement et horizontalement.
+  
+          section3.style.display="flex";
+          section3.style.flexDirection = "column"
+          section3.style.justifyContent= "center";
+          section3.style.alignItems ="center"
+  
+  
+  
+               
+  
+         
+  
