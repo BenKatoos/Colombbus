@@ -1,0 +1,377 @@
+@font-face{ /* intégration locale de la police d'écriture courgette*/
+    font-family: 'Courgette';
+    src: url(../font/Courgette/Courgette-Regular.ttf);
+}
+html{
+    font-size:62.5%;
+}
+
+/* STYLE GÉNÉRALE */
+body{
+    font-family: Arial, sans-serif; /* police générale pour le site*/
+}
+h1, h2, h3, #titre{
+    font-family: 'Courgette'; /* police courgette pour les titres*/
+    font-weight: bolder;    /* épaississement de la police */
+}
+/* STYLE GÉNÉRAL HEADER */
+
+header{
+    background-color: #C55394; /* couleur de fond rose pour le header*/
+    color: white; /* couleur de police blanche pour le header*/
+}
+header>div{
+    text-transform: uppercase; /* police des liens en majuscule */
+}
+
+/*STYLE GÉNÉRAL CORPS */
+
+h1{
+    color: #C55394; /* couleur de police titre de niveau 1*/
+}
+
+/* STYLE GÉNÉRALE PREMIÈRE SECTION */
+
+h2{
+    color: #EB43A3; /* couleur de police titre de niveau 2*/
+}
+
+
+
+/* STYLE GÉNÉRALE TROISIÈME SECTION */
+
+
+h3{
+    color: #EB43A3; /* couleur de police titre de niveau 3*/
+}
+
+iframe{
+    height: 250px;
+    width: 98%;
+}
+
+
+/* STYLE GÉNÉRALE FOOTER */
+
+footer{
+    background-color: #E577B5; /* couleur de fond rose pour le footer */
+    color: white;   /* couleur de police blanc*/
+}
+
+@media screen and (min-width:992px){
+    body{
+        background-image: url(../images/background.png);    /* image de fond pour le body*/
+    }
+    p{
+        font-size: 1.4rem;  /* taille police paragraphe*/
+    }
+    /*HEADER*/
+    header{
+        height: 50px;   /* hauteur du header*/
+        font-size: 1.8rem;  /* taille police liens*/
+        display: flex;
+        align-items: center; /* centrage sur l'axe verticale*/
+    }
+    #titre{
+        font-weight: bolder;    /* épaississement de la police*/
+        padding-left: 10px; /* repositionnement vers la droite*/
+    }
+    .link{
+        display: flex;
+        justify-content: space-around;  /* espacement des liens*/
+    }
+
+    /* MAIN */
+
+    main{
+        margin-top: 20px; /* marge pour mettre un espace entre le header et le corps de la page*/
+    }
+    .titre1{
+        background-image: url(../images/rainbow.png); /* image arc en ciel*/
+        background-repeat: no-repeat;   /* bloquer répétition image*/
+        background-size: cover; /* image complète*/
+        display: flex;  
+        justify-content: center; /* centrage horizontale */
+        margin: auto;   /* marge permet de centrer*/
+        width: 33%; /* taille 1/3 de la largeur*/
+        height: 135px;  /* hauteur de 135px */
+    }
+    h1{
+        line-height: 135px; /* permet de centrer horizontalement*/
+        font-size: 2.5rem;  /* taille de la police du titre*/
+    }
+
+    #container{
+        width: 60%;  /*largeur de 60% pour centrer les éléments*/
+        margin: auto;   /*permet de centrer*/
+        background-color: white; /* fond blanc*/
+        border: 1px solid grey; /* bordur de 1px gris*/
+        border-radius: 10px;    /* arrondi au bord de la bordure */
+        box-shadow: 1px 2px 21px 0px rgba(0,0,0,0.75);  /* ombre du block container*/
+        -webkit-box-shadow: 1px 2px 21px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 2px 21px 0px rgba(0,0,0,0.75);    }
+
+    h2{
+        font-size: 1.6rem; /* taille de la police du titre de niveau 2*/
+        margin-bottom: 8px; /* marge inférieur */
+    }
+
+    /* Première Section*/
+    .firstSection{
+        margin: 20px 10px; /* marge de 20px en haut et en bas marge de 10 px gauche droite*/
+        text-align: justify;    /* texte justifié*/
+    }
+    .firstSection p{
+        margin: 10px 0; /* marge de 10px en haut et en bas 0 gauche droite pour les paragraphe*/
+    }
+
+    /* Deuxième Section*/
+    .secondSection{
+        margin: 20px 10px;  /* marge de 20px en haut et en bas marge de 10 px gauche droite*/
+        width: 100%;    /* largeur de 100% */
+        height: 150px;  /* hauteur de 150px */
+    }
+    
+    .secondSection div{
+        margin-top: 20px;   /* marge de 20px top*/
+        width: 100%;    /* largeur de 100% */
+        display: flex; /* permet d'aligner horizontalement les éléments*/
+        justify-content: space-evenly; 
+    }
+
+    .licorne1{
+        width: 100%;    /* largeur de 100% */
+        position: relative; /* position relative */
+        overflow: hidden;   /* caché */
+    }
+    .licorne1 img{
+        width: 110px;   /* largeur de 110px*/
+        transition: 1s; /* transition de 1seconde*/
+    }
+    .licorne1 img:hover{
+        width: 130px;   /* largeur de 130px lorsqu'on passe la souris*/
+    }
+    .licorne1:hover .imageLicorne {
+        bottom: 0px;    /* placement tout en bas */
+        width: 130px;   /* largeur de 130px lorsqu'on passe la souris*/
+    }
+    .imageLicorne{
+        background-color: rgba(0, 0, 0, .65); /* fond noir opaque */
+        height: 30px;   /* hauteur de 30px*/
+        line-height: 30px;  /* centrage verticalemnt */
+        text-align: center; /* centrage horizontalement*/
+        color: white;   /* police blanche */
+        font-weight: bolder;    /* épaississement de la police*/
+        position: absolute;     /* position absolue */
+        width: 110px;   /* largeur de 110px*/
+        bottom: -90px;
+        transition: 1s;
+    }
+
+
+    /* Troisième Section*/
+
+    .thirdSection{
+        width: 100%;    /* largeur de 100%*/
+        margin: 20px 10px;  /* marge de 20px en haut et en bas marge de 10 px gauche droite*/
+    }
+    .thirdSection .maps{
+        border: 1px solid black; /* bordure noir */
+    }
+    .last{
+        display: flex;  
+        justify-content: space-evenly;  /* alignement des élément horizontalement */
+    }
+    .maps{
+        width: 60%; /* largeur de 60% */
+        height: 252px;  /* hauteur de 252px */
+    }
+    .blabla{
+        width: 40%; /* largeur de 40px */
+        margin: 0 10px; /* margeur sur les cotés 10px*/
+        display: flex; 
+        flex-direction: column; /* alignement verticale*/
+    }
+    h3{
+        font-size: 1.6rem;  /* taille police */
+        margin: 10px 0; /* marge haut et bas de 10px */
+    }
+    .lala1{
+        height: 40%;    /* hauteur de 40% */
+    }
+    .lala1 p{
+        font-style: italic; /* italic police */
+    }
+    .lala2{
+        height: 60%;    /* hauteur de 60%*/
+    }
+    
+    form{
+        font-size: 1.4rem; /* taille police*/
+        display: flex;
+        flex-direction: column; /* alignement verticale*/
+    }
+    form label{
+        margin-bottom: 10px;    /* margin bottom*/
+    }
+    form input{
+        height: 30px;   /* hauteur de 30px */
+        width: 140px;   /* largeur de 140px */
+    }
+    form button{   
+        width: 70px;    /* largeur de 70px */
+        height: 30px;   /* hauteur de 30px */
+        margin: 10px 0; /* marge haut et bas de 10px */
+        background-color: #C55394; /* fond rose */
+        color: white;   /* couleur police blanc */
+        border: #C55394;    /* couleur bordure rose*/
+        border-radius: 5px; /* arrondissement des bordures*/
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 1.6rem; /* taille de la police*/
+        height: 40px;   /* largeur de 40px */
+        margin-top: 20px;   /* marge top */
+        display: flex;    /* display flex et justify-content afin de mettre le texte à droite */
+        justify-content: flex-end;
+        align-items: center; /* centrage vertical */
+        width: 100%;    /* largeur de 100%*/
+        padding-right: 10px;    /* repositionement vers la gauche*/
+    }
+}
+@media screen and (max-width:576px){
+    
+    p{
+        font-size: 1.4rem; /* taille police */
+    }
+    /* HEADER */
+    header{
+        font-size: 1.8rem;  /* taille police */
+        padding-top: 10px;  /* repositionnement à droite */
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;    /* aligner verticalement et centrage horizontale*/
+        height: 200px;  /* hauteur de 200px */
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;  /* alignement verticale et centrage horizontale*/
+        align-items: center;
+        height: 150px; /* hauteur de 150px */
+    }
+
+    /* MAIN */
+
+    main{
+        margin-top: 20px; 
+    }
+    .titre1{
+        background-image: url(../images/rainbow.png); /* image de fond*/
+        background-repeat: no-repeat;   /* bloque répétition*/
+        background-size: cover;
+        display: flex;  
+        justify-content: center;
+        margin: auto;   /* centrage block*/
+        height: 100px;  /* hauteur de 100px */
+        width: 40%; /* largeur de 40%*/
+    }
+    h1{
+        line-height: 100px; /* centrage */
+        font-size: 1.8rem; /* taille police */
+    }
+
+    #container{
+        margin: auto;   /* centrage */
+        width: 90%; /* largeur de 90%*/
+    }
+
+    h2{
+        font-size: 1.6rem; /* taille police*/
+        margin: 20px 0; /* marge haut etbas */
+    }
+
+    /* Première section*/
+    .firstSection>p{
+        margin-bottom: 5px; /* marge bas*/
+    }
+
+    /* Deuxème Section*/
+    
+    .secondSection div{
+        width: 70%; /* largeur de 70%*/
+        margin: auto; /* centrage des éléments*/ 
+    }
+    .licorne1{
+        width: 100%;    /* largeur de 100%*/
+        position: relative; /* position relative */
+        margin:  10px 0; /* marge haut et bas 10px */
+    }
+    .licorne1 img{
+        width: 100%; /* largeur de 100% */
+    }
+    .imageLicorne{
+        background-color: rgba(0, 0, 0, .65); /* fond noir opaque*/
+        height: 30px;   /* hauteur de 30px */
+        line-height: 30px; /* centrage verticale*/
+        text-align: center; /* centrage horizontale*/
+        color: white;   /* couleur blanche*/
+        font-weight: bolder;    /* épaississement de la police*/
+        position: absolute; 
+        width: 100%;    /* largeur de 100% */
+        bottom: 0; /* postionner tout en bas de la div*/
+
+    }
+    /* Troisième section */
+
+    
+
+    .blabla{
+        margin: 30px 0; /* marge de 30px en bas et en haut*/ 
+    }
+    h3{
+        font-size: 1.6rem; /* police taille*/
+        margin: 10px 0; /* marge de 10px en bas et en haut*/ 
+    }
+    .lala1{
+        height: 40%; /* hauteur de 40%*/
+    }
+    .lala1 p{
+        font-style: italic; /*italic*/
+    }
+    .lala2{
+        height: 60%;    /* hauteur de 60%*/
+    }
+
+    form{
+        font-size: 1.4rem; /* taille police */
+        display: flex;
+        flex-direction: column; /* alignement verticale*/
+    }
+    form label{
+        margin-bottom: 10px;    /* marge bottom*/
+    }
+    form input{
+        height: 30px;   /* hauteur de 30px */
+        width: 140px;   /* largeur de 140px */
+    }
+    form button{
+        width: 70px;    /* largeur de 70px */
+        height: 30px;   /* hauteur de 30px*/
+        margin: 30px 0; /* marge de 30px en bas et en haut  */
+        background-color: #C55394;  /* fond rose button*/
+        color: white;   /* couleur police*/
+        border: #C55394;    /* bordure rose*/
+        border-radius: 5px;     /* arrondissement bordure*/
+    }
+
+    /* FOOTER */
+    footer{
+        display: flex;    /* display flex et justify-content afin de mettre le texte à droite*/
+        justify-content: center;
+        align-items: center;    /* centrage vertical et horizontale*/
+        height: 60px;   /* hauteur de 60px*/
+    }
+}
