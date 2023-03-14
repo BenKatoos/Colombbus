@@ -1,3 +1,17 @@
 .error{
     border: 2px solid rgb(239, 87, 87);
 }
+.valid{
+    border: 2px solid rgb(130, 233, 130);
+}
+
+form > div{
+    position: relative;
+}
+.erreur{
+    position: absolute;
+    top: 18px;
+    right: -305px;
+    font-size: 10px;
+    width: 300px;
+}
